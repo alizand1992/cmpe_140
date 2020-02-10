@@ -14,16 +14,16 @@ module CU (
 			2'b00: begin
 				if (go) begin
 					if (gt12) begin
-						controls = 7'b0_0_0_0_0_1_0;
+						controls = 7'b1_0_0_0_0_1_0;
 						ns = 2'b00;
 					end
 					else begin
-						controls = 7'b0_0_0_0_0_0_0;
+						controls = 7'b1_0_0_0_0_0_0;
 						ns = 2'b01;
 					end
 				end
 				else begin
-					controls = 7'b0_0_0_0_0_0_0;
+					controls = 7'b1_0_0_0_0_0_0;
 					ns = 2'b00;
 				end
 			end

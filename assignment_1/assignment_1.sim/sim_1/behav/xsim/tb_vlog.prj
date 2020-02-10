@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../assignment_1.srcs/sources_1/new/cmp.v" \
+"../../../../assignment_1.srcs/sources_1/new/cnt.v" \
+"../../../../assignment_1.srcs/sources_1/new/cu.v" \
+"../../../../assignment_1.srcs/sources_1/new/cu_dp.v" \
+"../../../../assignment_1.srcs/sources_1/new/dp.v" \
+"../../../../assignment_1.srcs/sources_1/new/mul.v" \
+"../../../../assignment_1.srcs/sources_1/new/mux.v" \
+"../../../../assignment_1.srcs/sources_1/new/reg.v" \
+"../../../../assignment_1.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

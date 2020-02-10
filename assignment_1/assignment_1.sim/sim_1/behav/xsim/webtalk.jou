@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Sun Feb  9 19:15:33 2020
+# Process ID: 6696
+# Current directory: C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace

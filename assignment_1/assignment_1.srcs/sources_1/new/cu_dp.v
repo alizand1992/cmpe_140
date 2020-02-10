@@ -16,7 +16,8 @@ module CU_DP (
 
 	DP dp (
 		.n(n), .clk(clk), .load_cnt(load_cnt), .load_reg(load_reg),
-		.sel(sel), .oe(oe), .lt1(lt1), .gt12(gt12), .out(factorial)
+		.en_cnt(en_cnt), .sel(sel), .oe(oe), .lt1(lt1), .gt12(gt12), 
+		.out(factorial)
 	);
 
 endmodule
