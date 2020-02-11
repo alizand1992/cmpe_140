@@ -30,7 +30,7 @@ module CU (
 
 			2'b01: begin
 				if (lt1) begin
-					controls = 7'b0_0_1_0_0_0_1;
+					controls = 7'b1_0_1_0_0_0_1;
 				end	
 				else begin
 					controls = 7'b1_0_1_0_1_0_0;
@@ -52,5 +52,9 @@ module CU (
 				ns = 0;
 			end		
 		endcase
+	end
+	
+	always @(ns) begin
+	   cs = ns;
 	end
 endmodule

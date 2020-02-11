@@ -12,18 +12,19 @@ module tb;
     
     CU_DP DUT(.n(n), .clk(clk), .go(go), .done(done), .error(error), .factorial(out));
 
-//    task comp_factorial; 
-//        begin
-//            exp = 1;
-//            temp = n;
-//            while(temp > 1) begin
-//                exp = exp * temp;
-//                temp = temp - 1;
-//            end
-//        end
-//    endtask
-
+    task comp_factorial; 
+        begin
+            exp = 1;
+            temp = n;
+            while(temp > 1) begin
+                exp = exp * temp;
+                temp = temp - 1;
+            end
+        end
+    endtask
+    
     initial begin
+        comp_factorial();
         clk = 0;
         go = 1;
         errors = 0;
@@ -46,6 +47,8 @@ module tb;
         end else begin
             $display("SUCCESS: There were no errors.");        
         end
+        
+        $finish;
     end
     
     always #5 clk = !clk;

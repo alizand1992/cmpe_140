@@ -2,7 +2,7 @@ module CNT (
 	input load_cnt, en, clk,
 	input [3:0] d,
 
-	output q	
+	output [3:0] q	
 );
 
 	reg [3:0] n;

@@ -1,14 +1,14 @@
 0.6
 2019.1
-Aug  9 2019
-16:39:02
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sim_1/new/tb.v,1581305739,verilog,,,,tb,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cmp.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cnt.v,,CMP,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cnt.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu.v,,CNT,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu.v,1581306079,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu_dp.v,,CU,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu_dp.v,1581305885,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/dp.v,,CU_DP,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/dp.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mul.v,,DP,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mul.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mux.v,,MUL,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mux.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/reg.v,,MUX,,,,,,,,
-C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/reg.v,1581292960,verilog,,C:/Users/Ali/Documents/cmpe_140/assignment_1/assignment_1.srcs/sim_1/new/tb.v,,REG,,,,,,,,
+May 24 2019
+15:06:07
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.sim/sim_1/behav/xsim/glbl.v,1581379750,verilog,,,,glbl,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sim_1/new/tb.v,1581381897,verilog,,,,tb,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cmp.v,1581380417,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cnt.v,,CMP,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cnt.v,1581382984,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu.v,,CNT,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu.v,1581383778,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu_dp.v,,CU,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/cu_dp.v,1581379750,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/dp.v,,CU_DP,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/dp.v,1581382353,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mul.v,,DP,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mul.v,1580916052,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mux.v,,MUL,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/mux.v,1580916061,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/reg.v,,MUX,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sources_1/new/reg.v,1580916094,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/sim_1/new/tb.v,,REG,,,,,,,,
