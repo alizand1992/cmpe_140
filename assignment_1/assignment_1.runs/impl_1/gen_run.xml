@@ -1,69 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1581441891">
-  <File Type="BITSTR-BMM" Name="CU_DP_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="CU_DP_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="CU_DP_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="CU_DP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CU_DP.tcl"/>
-  <File Type="OPT-TIMING" Name="CU_DP_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="CU_DP_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="CU_DP_power_summary_routed.pb"/>
+  <File Type="BITSTR-BMM" Name="CU_DP_bd.bmm"/>
   <File Type="REPORTS-TCL" Name="CU_DP_reports.tcl"/>
-  <File Type="OPT-DRC" Name="CU_DP_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="CU_DP_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="CU_DP.hwdef"/>
   <File Type="PWROPT-DCP" Name="CU_DP_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="CU_DP_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="CU_DP_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="CU_DP_placed.dcp"/>
-  <File Type="PLACE-IO" Name="CU_DP_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="CU_DP_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="CU_DP_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="CU_DP_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="CU_DP_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="CU_DP_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CU_DP_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="CU_DP.bgn"/>
-  <File Type="PLACE-TIMING" Name="CU_DP_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CU_DP_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="CU_DP.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="CU_DP_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="CU_DP_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="CU_DP_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="CU_DP.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="CU_DP_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="CU_DP_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="CU_DP_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="CU_DP_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="CU_DP_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="CU_DP_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="CU_DP.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="CU_DP_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="CU_DP.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CU_DP_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CU_DP_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-SYSDEF" Name="CU_DP.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CU_DP_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="CU_DP_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="CU_DP_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="CU_DP_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="CU_DP_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="CU_DP_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="CU_DP_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="CU_DP_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="CU_DP_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CU_DP_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="CU_DP_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="CU_DP_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="CU_DP_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CU_DP_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CU_DP_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CU_DP_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CU_DP_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CU_DP_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CU_DP_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="CU_DP.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CU_DP_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="CU_DP.rbt"/>
   <File Type="BITSTR-NKY" Name="CU_DP.nky"/>
   <File Type="BG-DRC" Name="CU_DP.drc"/>

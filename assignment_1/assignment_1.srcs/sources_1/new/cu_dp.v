@@ -3,6 +3,7 @@ module CU_DP (
 	input clk, go,
 
 	output done, error, 
+	output [1:0] cs,
 	output [31:0] factorial
 );
 
@@ -11,7 +12,7 @@ module CU_DP (
 	CU cu (
 		.go(go), .clk(clk), .lt1(lt1), .gt12(gt12), .load_cnt(load_cnt), 
 		.en_cnt(en_cnt), .load_reg(load_reg), .oe(oe), .sel(sel), 
-		.done(done), .error(error)
+		.done(done), .error(error), .cs(cs)
 	);
 
 	DP dp (

@@ -5,7 +5,7 @@ module CU (
 	output reg [1:0] cs, ns
 );
 
-	reg [3:0] controls;
+	reg [6:0] controls;
 
 	assign { load_cnt, en_cnt, load_reg, sel, oe, error, done } = controls;
 
@@ -20,15 +20,11 @@ module CU (
 						controls = 7'b0_0_0_0_1_1_0;
 						ns = 2'b00;
 					end
-//					else if (lt1)
-//					begin
-//						controls = 7'b1_0_1_1_1_0_1;              //may need to add this to state 2
-//						ns = 2'b01;
-//					end
-				end
-				else begin
-					controls = 7'b1_0_1_0_0_0_0;           //load
-					ns = 2'b01;
+                    else 
+                    begin
+                        controls = 7'b1_0_1_0_0_0_0;           //load
+                        ns = 2'b01;
+                    end
 				end
 			end
 
@@ -40,7 +36,7 @@ module CU (
 
 			2'b10: begin                         //calculation and done phase
 				if (lt1) begin
-					controls = 7'b0_1_1_1_0_0_1;
+					controls = 7'b0_0_0_1_0_0_1;
 					ns = 2'b00;					
 				end
 				else begin

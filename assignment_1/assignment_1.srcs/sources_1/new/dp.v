@@ -12,9 +12,9 @@ module DP (
 
 	CNT cnt (.load_cnt(load_cnt), .en(en_cnt), .clk(clk), .d(n), .q(cnt_out));
 
-	CMP cmp_lt1 (.a({0, cnt_out}), .b(1), .gt(lt1));
+	CMP cmp_lt1 (.a(1), .b({0, cnt_out}), .gt(lt1));
 
-	MUL mul (.a(cnt_out), .b(reg_out), .z(mul_out));
+	MUL mul (.a({0, cnt_out}), .b({0, reg_out}), .z(mul_out));
 
 	MUX mux (.a(mul_out), .b(1), .sel(sel), .z(mux_out));
 

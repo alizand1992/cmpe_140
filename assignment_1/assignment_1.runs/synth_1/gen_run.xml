@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1581441891">
   <File Type="PA-TCL" Name="CU_DP.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="CU_DP_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CU_DP_reports.tcl"/>
   <File Type="RDS-RDS" Name="CU_DP.vds"/>
-  <File Type="RDS-UTIL" Name="CU_DP_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="CU_DP_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="CU_DP.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="CU_DP_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="CU_DP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/cmp.v">
