@@ -20,7 +20,6 @@ module cu_tb;
         gt12 = 1;
         lt1 = 0;
 
-        //Otherwise, hold stat
         if (cs != 0)
             count  = count + 1;
         #10
