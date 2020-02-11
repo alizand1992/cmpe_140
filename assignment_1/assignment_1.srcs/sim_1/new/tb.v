@@ -31,17 +31,10 @@ module tb;
     
         i = 3;
         n = i;
-        #100;
+        #4;
+        go = 0;
+        #20;
 
-//        for (i = 3; i >= 0; i = i - 1) begin
-////            comp_factorial();
-//            #50;
-//            if (out != exp) begin
-//                errors = errors + 1;
-//                $display("Error: Expected %d, got %d", exp, out);
-//            end
-//        end
-        
         if (errors == 0) begin
             $display("There were %d errors", errors);
         end else begin
@@ -51,5 +44,5 @@ module tb;
         $finish;
     end
     
-    always #5 clk = !clk;
+    always #1 clk = !clk;
 endmodule

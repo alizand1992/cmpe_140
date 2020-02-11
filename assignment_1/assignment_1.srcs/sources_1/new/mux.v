@@ -4,7 +4,5 @@ module MUX (
 
 	output [31:0] z
 );
-
 	assign z = sel ? a : b;
-
 endmodule

@@ -7,7 +7,7 @@ module REG (
 
 	reg [31:0] mem;
 
-	always @ (clk) begin
+	always @(posedge clk) begin
 		if (load_reg) mem = d;
 	end
 
