@@ -60,22 +60,23 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/damie/Documents/GitHub/cmpe_140/assignment_1/assignment_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/damie/Documents/GitHub/cmpe_140/assignment_1/assignment_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/damie/Documents/GitHub/cmpe_140/assignment_1/assignment_1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.xpr [current_project]
+  set_property ip_output_repo C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/damie/Documents/GitHub/cmpe_140/assignment_1/assignment_1.runs/synth_1/CU_DP.dcp
-  link_design -top CU_DP -part xc7a35tcpg236-1
+  add_files -quiet C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.runs/synth_1/top.dcp
+  read_xdc C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.srcs/constrs_1/imports/new/master.xdc
+  link_design -top top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -91,8 +92,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force CU_DP_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file CU_DP_drc_opted.rpt -pb CU_DP_drc_opted.pb -rpx CU_DP_drc_opted.rpx"
+  write_checkpoint -force top_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -111,10 +112,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force CU_DP_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file CU_DP_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file CU_DP_utilization_placed.rpt -pb CU_DP_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file CU_DP_control_sets_placed.rpt"
+  write_checkpoint -force top_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file top_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file top_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -130,19 +131,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force CU_DP_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file CU_DP_drc_routed.rpt -pb CU_DP_drc_routed.pb -rpx CU_DP_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file CU_DP_methodology_drc_routed.rpt -pb CU_DP_methodology_drc_routed.pb -rpx CU_DP_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file CU_DP_power_routed.rpt -pb CU_DP_power_summary_routed.pb -rpx CU_DP_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file CU_DP_route_status.rpt -pb CU_DP_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file CU_DP_timing_summary_routed.rpt -pb CU_DP_timing_summary_routed.pb -rpx CU_DP_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file CU_DP_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file CU_DP_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file CU_DP_bus_skew_routed.rpt -pb CU_DP_bus_skew_routed.pb -rpx CU_DP_bus_skew_routed.rpx"
+  write_checkpoint -force top_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file top_route_status.rpt -pb top_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force CU_DP_routed_error.dcp
+  write_checkpoint -force top_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -154,10 +155,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force CU_DP.mmi }
-  write_bitstream -force CU_DP.bit 
-  catch {write_debug_probes -quiet -force CU_DP}
-  catch {file copy -force CU_DP.ltx debug_nets.ltx}
+  catch { write_mem_info -force top.mmi }
+  write_bitstream -force top.bit 
+  catch {write_debug_probes -quiet -force top}
+  catch {file copy -force top.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

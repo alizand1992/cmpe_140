@@ -1,23 +1,27 @@
-module bcd_to_7seg (
-        input  wire [3:0] BCD,
-        output reg  [7:0] s
-    );
-
-    always @ (BCD) begin
-        case (BCD)
-                4'd0: s = 8'b11000000;
-                4'd1: s = 8'b11111001;
-                4'd2: s = 8'b10100100;
-                4'd3: s = 8'b10110000;
-                4'd4: s = 8'b10011001;
-                4'd5: s = 8'b10010010;
-                4'd6: s = 8'b10000010;
-                4'd7: s = 8'b11111000;
-                4'd8: s = 8'b10000000;
-                4'd9: s = 8'b10010000;
- 
-             default: s = 8'b01111111;
-        endcase
-    end
-
+module hex_to_7seg(number, s0, s1, s2, s3, s4, s5, s6);
+ output s0, s1, s2, s3, s4, s5, s6;
+ input [3:0] number;
+ reg s0, s1, s2, s3, s4, s5, s6;
+ always @ (number)
+ begin // BCD to 7-segment decoding
+ case (number) // s0 - s6 are active low
+ 4'h0: begin s0=0; s1=0; s2=0; s3=0; s4=0; s5=0; s6=1; end
+ 4'h1: begin s0=1; s1=0; s2=0; s3=1; s4=1; s5=1; s6=1; end
+ 4'h2: begin s0=0; s1=0; s2=1; s3=0; s4=0; s5=1; s6=0; end
+ 4'h3: begin s0=0; s1=0; s2=0; s3=0; s4=1; s5=1; s6=0; end
+ 4'h4: begin s0=1; s1=0; s2=0; s3=1; s4=1; s5=0; s6=0; end
+ 4'h5: begin s0=0; s1=1; s2=0; s3=0; s4=1; s5=0; s6=0; end
+ 4'h6: begin s0=0; s1=1; s2=0; s3=0; s4=0; s5=0; s6=0; end
+ 4'h7: begin s0=0; s1=0; s2=0; s3=1; s4=1; s5=1; s6=1; end
+ 4'h8: begin s0=0; s1=0; s2=0; s3=0; s4=0; s5=0; s6=0; end
+ 4'h9: begin s0=0; s1=0; s2=0; s3=1; s4=1; s5=0; s6=0; end
+ 4'ha: begin s0=0; s1=0; s2=0; s3=0; s4=0; s5=1; s6=0; end
+ 4'hb: begin s0=1; s1=1; s2=0; s3=0; s4=0; s5=0; s6=0; end
+ 4'hc: begin s0=1; s1=1; s2=1; s3=0; s4=0; s5=1; s6=0; end
+ 4'hd: begin s0=1; s1=0; s2=0; s3=0; s4=0; s5=1; s6=0; end
+ 4'he: begin s0=0; s1=0; s2=1; s3=0; s4=0; s5=0; s6=0; end
+ 4'hf: begin s0=0; s1=1; s2=1; s3=1; s4=0; s5=0; s6=0; end
+ default: begin s0=1; s1=1; s2=1; s3=1; s4=1; s5=1; s6=1; end
+ endcase
+ end
 endmodule

@@ -2,9 +2,9 @@ module CU (
 	input go, clk, lt1, gt12,
 
 	output load_cnt, en_cnt, load_reg, oe, sel, done, error, 
-	output reg [1:0] cs, ns
+	output reg [1:0] cs
 );
-
+    reg [1:0] ns;
 	reg [6:0] controls;
 
 	assign { load_cnt, en_cnt, load_reg, sel, oe, error, done } = controls;
@@ -46,7 +46,6 @@ module CU (
 			end
 
 			default: begin
-				cs = 0;
 				ns = 0;
 			end		
 		endcase
