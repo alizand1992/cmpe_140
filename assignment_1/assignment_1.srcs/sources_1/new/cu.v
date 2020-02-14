@@ -9,7 +9,7 @@ module CU (
 
 	assign { load_cnt, en_cnt, load_reg, sel, oe, error, done } = controls;
 
-	always @ (posedge clk) begin
+	always @ (cs, gt12, lt1, go) begin
 		case (cs)
 			2'b00:           //idle phase
 			begin
@@ -22,7 +22,7 @@ module CU (
 					end
                     else 
                     begin
-                        controls = 7'b1_0_1_0_0_0_0;           //load
+                        controls = 7'b1_0_1_0_1_0_0;           //load
                         ns = 2'b01;
                     end
 				end
@@ -40,7 +40,7 @@ module CU (
 					ns = 2'b00;					
 				end
 				else begin
-					controls = 7'b0_1_1_1_0_0_0;
+					controls = 7'b0_1_1_1_1_0_0;
 					ns = 2'b10;			
 				end
 			end
@@ -51,7 +51,7 @@ module CU (
 		endcase
 	end
 	
-	always @(ns) begin
+	always @(posedge clk) begin
 	   cs = ns;
 	end
 endmodule

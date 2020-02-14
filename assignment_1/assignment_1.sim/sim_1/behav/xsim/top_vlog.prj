@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../assignment_1.srcs/sources_1/new/LED_MUX.v" \
+"../../../../assignment_1.srcs/sources_1/new/bin_2_hex_32.v" \
+"../../../../assignment_1.srcs/sources_1/imports/new/button_debouncer.v" \
+"../../../../assignment_1.srcs/sources_1/imports/new/clk_gen.v" \
+"../../../../assignment_1.srcs/sources_1/new/cmp.v" \
+"../../../../assignment_1.srcs/sources_1/new/cnt.v" \
+"../../../../assignment_1.srcs/sources_1/new/cu.v" \
+"../../../../assignment_1.srcs/sources_1/new/cu_dp.v" \
+"../../../../assignment_1.srcs/sources_1/new/dp.v" \
+"../../../../assignment_1.srcs/sources_1/new/hex2led.v" \
+"../../../../assignment_1.srcs/sources_1/new/hilo_mux.v" \
+"../../../../assignment_1.srcs/sources_1/new/mul.v" \
+"../../../../assignment_1.srcs/sources_1/new/mux.v" \
+"../../../../assignment_1.srcs/sources_1/new/reg.v" \
+"../../../../assignment_1.srcs/sources_1/new/factorial_fpga.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

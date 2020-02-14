@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Feb 11 13:05:59 2020
-# Process ID: 15604
+# Start of session at: Tue Feb 11 14:08:53 2020
+# Process ID: 7420
 # Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/aliza/Documents/cmpe_140/assignment_1/assignment_1.runs/synth_1/top.vds
