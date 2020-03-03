@@ -32,13 +32,13 @@ factorial:
 	sw   	$s0, 4($sp)
 	sw	$ra, 0($sp)
 
-	bne	$a0, $0, else
+	bne	$a1, $0, else
 	addi	$v0, $0, 1
 	j	fact_ret
 
 else:
-	ori 	$s0, $a0, 0
-	addi	$a0, $a0, -1
+	ori 	$s0, $a1, 0
+	addi	$a1, $a1, -1
 	jal	factorial
 
 	mult	$s0, $v0
