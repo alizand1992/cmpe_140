@@ -17,15 +17,38 @@ CreateArray_Loop:
         addi        $a1, $a1, 1         # i = i + 1
         j           CreateArray_Loop
 Exit_Loop:                              # n = (arr[25] + arr[30]) / 30
-        lw          $t4, (100)$a0       # t4 = arr[25]
-        lw          $t5, (120)$a0       # t5 = arr[30]
+        lw          $t4, 100($a0)       # t4 = arr[25]
+        lw          $t5, 120($a0)       # t5 = arr[30]
         add         $t4, $t4, $t5       # t4 = arr[25] + arr[30]
-        div
-
+        ori         $t5, $0, 30         # t5 = 30
+        div         $t4, $t5            # t4 / 30
+        mflo        $a1                 # n = t4
+        sw          $a1, 0($0)
         jal         factorial           # call procedure
-        add         $s0, $v0, $0        # return value
+        j           end
+
 factorial:
-        addi        $sp, $sp, -8        # make room on the stack
-        sw          $a1, 4($sp)         # store $a1
-        sw          $ra, 0($sp)         # store $ra
- # your code goes in here
+	addi	$sp, $sp, -8
+	sw   	$s0, 4($sp)
+	sw	$ra, 0($sp)
+
+	bne	$a0, $0, else
+	addi	$v0, $0, 1
+	j	fact_ret
+
+else:
+	ori 	$s0, $a0, 0
+	addi	$a0, $a0, -1
+	jal	factorial
+
+	mult	$s0, $v0
+	mflo	$v0
+
+fact_ret:
+	lw	$s0, 4($sp)
+	lw	$ra, 0($sp)
+	addi	$sp, $sp, 8
+	jr	$ra
+
+end:
+        sw $v0, 16($0)
