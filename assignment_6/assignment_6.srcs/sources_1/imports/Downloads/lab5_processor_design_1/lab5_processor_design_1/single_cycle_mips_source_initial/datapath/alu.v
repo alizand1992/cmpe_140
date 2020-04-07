@@ -3,7 +3,8 @@ module alu (
         input  wire [31:0] a,
         input  wire [31:0] b,
         output wire        zero,
-        output reg  [31:0] y
+        output reg  [31:0] y,
+        output reg  [63:0] mult_out
     );
 
     assign zero = (y == 0);
@@ -14,6 +15,7 @@ module alu (
             3'b001: y = a | b;
             3'b010: y = a + b;
             3'b110: y = a - b;
+            3'b011: mult_out = a * b;
             3'b111: y = (a < b) ? 1 : 0;
         endcase
     end
