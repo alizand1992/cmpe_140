@@ -17,3 +17,9 @@ AC670044
 20020001
 AC020054
 08000000
+
+so make sure that this includes the shift instructions
+1. fire up MARS
+2. Add instruction
+3. text section to address 0
+4. Generate machine code

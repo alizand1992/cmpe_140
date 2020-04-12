@@ -57,7 +57,7 @@ module datapath (
             .y              (pc_plus4)
         );
         
-    left_shif_2 ls2 (
+    left_shift_2 ls2 (
         .in(pc_plus4),
         .out(pc_jmp_addr)
     );
