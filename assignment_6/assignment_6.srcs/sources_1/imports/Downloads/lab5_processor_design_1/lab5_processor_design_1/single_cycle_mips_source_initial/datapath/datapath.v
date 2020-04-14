@@ -16,20 +16,10 @@ module datapath (
     
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};
-    assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
+    assign jta = {pc_plus4[29:0], 2'b00};
     assign pc_jmp_addr = {pc_plus4[29:0], 2'b0};
         
     // --- PC Logic --- //
-    dreg pc_reg (
-        .clk(clk), .rst(rst), .d(pc_next),
-        .q(pc_current)
-    );
-
-    adder pc_plus_4 (
-        .a(pc_current), .b(32'd4),
-        .y(pc_plus4)
-    );
-        
     adder pc_plus_br (
         .a(pc_plus4), .b(ba),
         .y(bta)
@@ -46,10 +36,20 @@ module datapath (
     );
     
     mux2 #(32) jr_mux (
-        .sel(jr), .a(pc_jmp_jr), .b(rd1),
+        .sel(jr), .a(pc_jmp_jr), .b(alu_pa),
         .y(pc_next)
     );
 
+    dreg pc_reg (
+        .clk(clk), .rst(rst), .d(pc_next),
+        .q(pc_current)
+    );
+
+    adder pc_plus_4 (
+        .a(pc_current), .b(32'd4),
+        .y(pc_plus4)
+    );
+        
     // --- RF Logic --- //
     mux2 #(5) reg_dst1 (
         .sel(reg_dst_1), .a(instr[20:16]), .b(instr[15:11]),
@@ -60,11 +60,6 @@ module datapath (
         .sel(reg_dst_2), .a(dst_1_2), .b(r31),
         .y(rf_wa)
     );
-
-//    mux2 #(5) reg_dst3 (
-//        .sel(reg_dst_3), .a(dst_2_3), .b(5'b0),
-//        .y(rf_wa)
-//    );
 
     regfile rf (
         .clk(clk), .we(we_reg), .ra1(instr[25:21]), .ra2(instr[20:16]), 
