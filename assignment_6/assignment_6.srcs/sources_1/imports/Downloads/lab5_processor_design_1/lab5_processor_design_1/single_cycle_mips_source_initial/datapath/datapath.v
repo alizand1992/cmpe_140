@@ -16,7 +16,7 @@ module datapath (
     
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};
-    assign jta = {pc_plus4[29:0], 2'b00};
+    assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
     assign pc_jmp_addr = {pc_plus4[29:0], 2'b00};
         
     // --- PC Logic --- //
@@ -104,7 +104,7 @@ module datapath (
     );
 
     mux2 #(32) jal_mux (
-        .sel(jal_sel), .a(pc_plus4), .b(mem_jal),
+        .sel(jal_sel), .a(mem_jal), .b(pc_plus4),
         .y(jal_res)
     );
 

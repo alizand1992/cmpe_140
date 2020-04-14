@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3333333fs"></ZoomStartTime>
-      <ZoomEndTime time="23333334fs"></ZoomEndTime>
-      <Cursor1Time time="20000000fs"></Cursor1Time>
+      <ZoomStartTime time="279495000fs"></ZoomStartTime>
+      <ZoomEndTime time="430295001fs"></ZoomEndTime>
+      <Cursor1Time time="410395000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="109"></NameColumnWidth>
-      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+      <NameColumnWidth column_width="105"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="36" />
+   <WVObjectSize size="40" />
    <wvobject fp_name="/tb_mips_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,10 +27,6 @@
    <wvobject fp_name="/tb_mips_top/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_mips_top/we_dm" type="logic">
-      <obj_property name="ElementShortName">we_dm</obj_property>
-      <obj_property name="ObjectShortName">we_dm</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/pc_current" type="array">
       <obj_property name="ElementShortName">pc_current[31:0]</obj_property>
@@ -103,6 +99,7 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/rf" type="array">
       <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/n" type="array">
       <obj_property name="ElementShortName">n[31:0]</obj_property>
@@ -163,5 +160,25 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/alu_pa" type="array">
       <obj_property name="ElementShortName">alu_pa[31:0]</obj_property>
       <obj_property name="ObjectShortName">alu_pa[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/we_dm" type="logic">
+      <obj_property name="ElementShortName">we_dm</obj_property>
+      <obj_property name="ObjectShortName">we_dm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/jump" type="logic">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/pc_src" type="logic">
+      <obj_property name="ElementShortName">pc_src</obj_property>
+      <obj_property name="ObjectShortName">pc_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
    </wvobject>
 </wave_config>

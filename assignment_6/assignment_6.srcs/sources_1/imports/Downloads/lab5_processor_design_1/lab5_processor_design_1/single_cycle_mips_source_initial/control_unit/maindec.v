@@ -4,7 +4,7 @@ module maindec (
     output reg_dst_1, reg_dst_2, reg_dst_3, jal_sel,
     output [1:0] alu_op
 );
-    reg [8:0] ctrl;
+    reg [11:0] ctrl;
 
     assign {
         branch, jump, 
