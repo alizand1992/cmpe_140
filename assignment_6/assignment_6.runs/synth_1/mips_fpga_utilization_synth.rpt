@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Apr 14 13:57:29 2020
+| Date         : Tue Apr 14 14:17:00 2020
 | Host         : LAPTOP-8D7LEK0E running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mips_fpga_utilization_synth.rpt -pb mips_fpga_utilization_synth.pb
 | Design       : mips_fpga
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1299 |     0 |     20800 |  6.25 |
-|   LUT as Logic             | 1267 |     0 |     20800 |  6.09 |
+| Slice LUTs*                | 1302 |     0 |     20800 |  6.26 |
+|   LUT as Logic             | 1270 |     0 |     20800 |  6.11 |
 |   LUT as Memory            |   32 |     0 |      9600 |  0.33 |
 |     LUT as Distributed RAM |   32 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -154,16 +154,16 @@ Table of Contents
 | FDRE     | 1060 |        Flop & Latch |
 | LUT6     |  841 |                 LUT |
 | MUXF7    |  447 |               MuxFx |
-| LUT5     |  258 |                 LUT |
+| LUT5     |  259 |                 LUT |
 | MUXF8    |  128 |               MuxFx |
-| LUT4     |   81 |                 LUT |
+| LUT4     |   82 |                 LUT |
 | LUT2     |   69 |                 LUT |
 | CARRY4   |   44 |          CarryLogic |
 | LUT1     |   33 |                 LUT |
 | RAMS64E  |   32 |  Distributed Memory |
 | LDCE     |   32 |        Flop & Latch |
 | FDCE     |   32 |        Flop & Latch |
-| LUT3     |   22 |                 LUT |
+| LUT3     |   23 |                 LUT |
 | OBUF     |   13 |                  IO |
 | IBUF     |   12 |                  IO |
 | BUFG     |    3 |               Clock |

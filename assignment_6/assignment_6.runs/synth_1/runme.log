@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15388 
+INFO: Helper process launched with PID 1928 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 673.414 ; gain = 178.172
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 673.145 ; gain = 176.926
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mips_fpga' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/mips_fpga.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/clk_gen.v:1]
@@ -96,7 +96,7 @@ WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 737.773 ; gain = 242.531
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 737.594 ; gain = 241.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,10 +109,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 737.773 ; gain = 242.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 737.594 ; gain = 241.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 737.773 ; gain = 242.531
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 737.594 ; gain = 241.375
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -124,26 +124,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/mips_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 865.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 866.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 865.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 866.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5587] ROM size for "ctrl" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
@@ -152,7 +152,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'mult_out_reg' [C:/Users/ali
 WARNING: [Synth 8-327] inferring latch for variable 'ctrl_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:12]
 WARNING: [Synth 8-327] inferring latch for variable 'aux_ctrl_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,7 +179,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 10    
 	  33 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 1     
-	  22 Input     32 Bit        Muxes := 1     
+	  23 Input     32 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
@@ -265,7 +265,7 @@ Detailed RTL Component Info :
 Module imem 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  22 Input     32 Bit        Muxes := 1     
+	  23 Input     32 Bit        Muxes := 1     
 Module led_mux 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -373,7 +373,7 @@ WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[2])
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[1]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[0]) is unused and will be removed from module mips_fpga.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -412,13 +412,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 866.051 ; gain = 369.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -449,7 +449,7 @@ WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[2]) is 
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[1]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[4]) is unused and will be removed from module mips_fpga.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 865.559 ; gain = 370.316
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 868.590 ; gain = 372.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -473,7 +473,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -486,7 +486,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -498,25 +498,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -536,9 +536,9 @@ Report Cell Usage:
 |2     |CARRY4   |    44|
 |3     |LUT1     |    33|
 |4     |LUT2     |    69|
-|5     |LUT3     |    22|
-|6     |LUT4     |    81|
-|7     |LUT5     |   258|
+|5     |LUT3     |    23|
+|6     |LUT4     |    82|
+|7     |LUT5     |   259|
 |8     |LUT6     |   841|
 |9     |MUXF7    |   447|
 |10    |MUXF8    |   128|
@@ -554,31 +554,31 @@ Report Instance Areas:
 +------+------------------+-----------------+------+
 |      |Instance          |Module           |Cells |
 +------+------------------+-----------------+------+
-|1     |top               |                 |  3107|
+|1     |top               |                 |  3110|
 |2     |  bd              |button_debouncer |    20|
 |3     |  clk_gen         |clk_gen          |    56|
 |4     |  led_mux         |led_mux          |    29|
-|5     |  mips_top        |mips_top         |  2944|
+|5     |  mips_top        |mips_top         |  2947|
 |6     |    dmem          |dmem             |    32|
-|7     |    mips          |mips             |  2912|
-|8     |      dp          |datapath         |  2912|
+|7     |    mips          |mips             |  2915|
+|8     |      dp          |datapath         |  2915|
 |9     |        alu       |alu              |    88|
 |10    |        pc_plus_4 |adder            |    47|
-|11    |        pc_reg    |dreg             |   397|
+|11    |        pc_reg    |dreg             |   400|
 |12    |        rf        |regfile          |  2380|
 +------+------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 77 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 876.504 ; gain = 253.477
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 876.504 ; gain = 381.262
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 881.328 ; gain = 256.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 881.328 ; gain = 385.109
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 683 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 892.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.508 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 64 instances were transformed.
   LD => LDCE: 32 instances
@@ -587,10 +587,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 62 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 892.586 ; gain = 601.816
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 892.586 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 884.508 ; gain = 592.371
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.508 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/synth_1/mips_fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mips_fpga_utilization_synth.rpt -pb mips_fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 13:57:29 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 14:17:00 2020...

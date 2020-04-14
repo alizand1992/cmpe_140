@@ -104,7 +104,7 @@ module datapath (
     );
 
     mux2 #(32) jal_mux (
-        .sel(jal_sel), .a(mem_jal), .b(pc_plus4),
+        .sel(jal_sel), .a(pc_plus4), .b(mem_jal),
         .y(jal_res)
     );
 
