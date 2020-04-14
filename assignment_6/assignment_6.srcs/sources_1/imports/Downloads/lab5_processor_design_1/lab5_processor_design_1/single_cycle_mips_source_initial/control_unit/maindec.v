@@ -1,10 +1,9 @@
 module maindec (
-        input  wire [5:0] opcode,
-        output branch, jump, we_reg, alu_src, we_dm, dm2reg,
-        output reg_dst_1, reg_dst_2, reg_dst_3, jal_sel,
-        output wire [1:0] alu_op
-    );
-
+    input [5:0] opcode,
+    output branch, jump, we_reg, alu_src, we_dm, dm2reg,
+    output reg_dst_1, reg_dst_2, reg_dst_3, jal_sel,
+    output [1:0] alu_op
+);
     reg [8:0] ctrl;
 
     assign {branch, jump, reg_dst_1, reg_dst_2, reg_dst_3, we_reg, alu_src, we_dm, dm2reg, jal_sel, alu_op} = ctrl;
