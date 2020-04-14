@@ -1,43 +1,18 @@
 module datapath (
-        input  wire        clk,
-        input  wire        rst,
-        input  wire        branch,
-        input  wire        jump,
-        input  wire        reg_dst,
-        input  wire        we_reg,
-        input  wire        alu_src,
-        input  wire        dm2reg,
-        input  wire        mult_w_en,
-        input  wire        mult_sel,
-        input  wire        mfhi_mflo,
-        input  wire        jal_sel,
-        input  wire [2:0]  alu_ctrl,
-        input  wire [4:0]  ra3,
-        input  wire [31:0] instr,
-        input  wire [31:0] rd_dm,
-        output wire [31:0] pc_current,
-        output wire [31:0] alu_out,
-        output wire [31:0] wd_dm,
-        output wire [31:0] rd3
-    );
+    input clk, rst, branch, jump, reg_dst_1, reg_dst_2, reg_dst_3, we_reg, alu_src, 
+    input dm2reg, mult_w_en, mult_sel, mfhi_mflo, jal_sel,
+    input [2:0]  alu_ctrl,
+    input [4:0]  ra3,
+    input [31:0] instr, rd_dm, pc_current, alu_out, wd_dm, rd3
+);
 
-    wire [4:0] dst_1_2, dst_2_3, r31, rf_wa;        
-    wire        pc_src;
-    wire [31:0] pc_plus4;
-    wire [31:0] pc_pre;
-    wire [31:0] pc_next;
-    wire [31:0] sext_imm;
-    wire [31:0] ba;
-    wire [31:0] bta;
-    wire [31:0] jta;
-    wire [31:0] alu_pa;
-    wire [31:0] alu_pb;
+    wire        pc_src, zero;
+    wire [4:0]  dst_1_2, dst_2_3, r31, rf_wa;
+    wire [31:0] pc_plus4, pc_pre, pc_next, sext_imm, 
+                ba, bta, jta, alu_pa, alu_pb, mult_hi, 
+                mult_lo, mult_res, mem_jal, jal_res, 
+                wd_rf, pc_jmp_addr;
     wire [63:0] mult_out;
-    wire [31:0] mult_hi, mult_lo, mult_res;
-    wire [31:0] mem_jal, jal_res;
-    wire [31:0] wd_rf;
-    wire        zero;
-    wire [31:0] pc_jmp_addr;
     
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};
@@ -45,17 +20,14 @@ module datapath (
     
     // --- PC Logic --- //
     dreg pc_reg (
-            .clk            (clk),
-            .rst            (rst),
-            .d              (pc_next),
-            .q              (pc_current)
-        );
+        .clk(clk), .rst(rst), .d(pc_next),
+        .q(pc_current)
+    );
 
     adder pc_plus_4 (
-            .a              (pc_current),
-            .b              (32'd4),
-            .y              (pc_plus4)
-        );
+        .a(pc_current), .b(32'd4),
+        .y(pc_plus4)
+    );
         
     left_shift_2 ls2 (
         .in(pc_plus4),
@@ -63,77 +35,57 @@ module datapath (
     );
 
     adder pc_plus_br (
-            .a              (pc_plus4),
-            .b              (ba),
-            .y              (bta)
-        );
+        .a(pc_plus4), .b(ba),
+        .y(bta)
+    );
 
     mux2 #(32) pc_src_mux (
-            .sel            (pc_src),
-            .a              (pc_plus4),
-            .b              (bta),
-            .y              (pc_pre)
-        );
+        .sel(pc_src), .a(pc_plus4), .b(bta), 
+        .y(pc_pre)
+    );
 
     mux2 #(32) pc_jmp_mux (
-            .sel            (jump),
-            .a              (pc_pre),
-            .b              (jta),
-            .y              (pc_next)
-        );
+        .sel(jump), .a(pc_pre), .b(jta),
+        .y(pc_next)
+    );
 
     // --- RF Logic --- //
-    mux2 #(5) reg_dst1 (
-            .sel            (reg_dst),
-            .a              (instr[20:16]),
-            .b              (instr[15:11]),
-            .y              (dst_1_2)
-        );
+    mux2 #(5) reg_dst1_mux (
+        .sel(reg_dst_1), .a(instr[20:16]), .b(instr[15:11]),
+        .y(dst_1_2)
+    );
         
-    mux2 #(5) reg_dst2 (
-        .sel(0), .a(dst_1_2), .b(r31),
+    mux2 #(5) reg_dst2_mux (
+        .sel(reg_dst_2), .a(dst_1_2), .b(r31),
         .y(dst_2_3)
     );
 
-    mux2 #(5) reg_dst3 (
-        .sel(0), .a(dst_2_3), .b(0),
+    mux2 #(5) reg_dst3_mux (
+        .sel(reg_dst_3), .a(dst_2_3), .b(0),
         .y(rf_wa)
     );
 
     regfile rf (
-            .clk            (clk),
-            .we             (we_reg),
-            .ra1            (instr[25:21]),
-            .ra2            (instr[20:16]),
-            .ra3            (ra3),
-            .wa             (rf_wa),
-            .wd             (wd_rf),
-            .rd1            (alu_pa),
-            .rd2            (wd_dm),
-            .rd3            (rd3)
-        );
+        .clk(clk), .we(we_reg), .ra1(instr[25:21]), .ra2(instr[20:16]), 
+        .ra3(ra3), .wa(rf_wa), .wd(wd_rf),
+        .rd1(alu_pa), .rd2(wd_dm), .rd3(rd3), .r31(r31)
+    );
 
     signext se (
-            .a              (instr[15:0]),
-            .y              (sext_imm)
-        );
+        .a(instr[15:0]),
+        .y(sext_imm)
+    );
 
     // --- ALU Logic --- //
     mux2 #(32) alu_pb_mux (
-            .sel            (alu_src),
-            .a              (wd_dm),
-            .b              (sext_imm),
-            .y              (alu_pb)
-        );
+        .sel(alu_src), .a(wd_dm), .b(sext_imm),
+        .y(alu_pb)
+    );
 
     alu alu (
-            .op             (alu_ctrl),
-            .a              (alu_pa),
-            .b              (alu_pb),
-            .zero           (zero),
-            .y              (alu_out),
-            .mult_out       (mult_out)
-        );
+        .op(alu_ctrl), .a(alu_pa), .b(alu_pb),
+        .zero(zero), .y(alu_out), .mult_out(mult_out)
+    );
 
     reg_32 hi_reg (
         .we(mult_w_en), .D(mult_out[63:32]),
