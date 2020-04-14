@@ -10,20 +10,21 @@ module maindec (
         output wire [1:0] alu_op
     );
 
-    reg [8:0] ctrl;
+        reg [10:0] ctrl;
 
-    assign {branch, jump, reg_dst, we_reg, alu_src, we_dm, dm2reg, alu_op} = ctrl;
+    assign {branch, jump, reg_dst, we_reg, alu_src, we_dm, dm2reg, alu_op, link1sel, link2sel} = ctrl;
 
     always @ (opcode) begin
         case (opcode)
-            6'b00_0000: ctrl = 9'b0_0_1_1_0_0_0_10; // R-type
-            6'b00_1000: ctrl = 9'b0_0_0_1_1_0_0_00; // ADDI
-            6'b00_0100: ctrl = 9'b1_0_0_0_0_0_0_01; // BEQ
-            6'b00_0010: ctrl = 9'b0_1_0_0_0_0_0_00; // J
-            6'b10_1011: ctrl = 9'b0_0_0_0_1_1_0_00; // SW
-            6'b10_0011: ctrl = 9'b0_0_0_1_1_0_1_00; // LW
-            default:    ctrl = 9'bx_x_x_x_x_x_x_xx;
+            6'b00_0000: ctrl = 11'b0_0_1_1_0_0_0_10_0_0; // R-type
+            6'b00_1000: ctrl = 11'b0_0_0_1_1_0_0_00_0_0; // ADDI
+            6'b00_0100: ctrl = 11'b1_0_0_0_0_0_0_01_0_0; // BEQ
+            6'b00_0010: ctrl = 11'b0_1_0_0_0_0_0_00_0_0; // J
+            6'b10_1011: ctrl = 11'b0_0_0_0_1_1_0_00_0_0; // SW
+            6'b10_0011: ctrl = 11'b0_0_0_1_1_0_1_00_0_0; // LW
+            // added
+            6'b00_0011: ctrl = 11'b0_1_1_1_0_0_0_00_1_1; // JAL
+            default:    ctrl = 11'bx_x_x_x_x_x_x_xx_x_x;
         endcase
     end
-
 endmodule
