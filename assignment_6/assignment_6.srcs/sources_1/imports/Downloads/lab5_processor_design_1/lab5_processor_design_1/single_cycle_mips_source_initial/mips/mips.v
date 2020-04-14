@@ -16,7 +16,7 @@ module mips (
         .we_reg(we_reg), .alu_src(alu_src), .dm2reg(dm2reg), .alu_ctrl(alu_ctrl), 
         .ra3(ra3), .instr(instr), .rd_dm(rd_dm), .pc_current(pc_current), 
         .alu_out(alu_out), .wd_dm(wd_dm), .rd3(rd3), .mult_w_en(mult_w_en), 
-        .mult_sel(mult_sel), .mfhi_mflo(mfhi_mflo), .jal_sel(jal_sel)
+        .mult_sel(mult_sel), .mfhi_mflo(mfhi_mflo), .jal_sel(jal_sel), .jr(jr)
     );
 
     controlunit cu (

@@ -1,6 +1,6 @@
 module datapath (
     input clk, rst, branch, jump, reg_dst_1, reg_dst_2, reg_dst_3, we_reg, alu_src, 
-    input dm2reg, mult_w_en, mult_sel, mfhi_mflo, jal_sel,
+    input dm2reg, mult_w_en, mult_sel, mfhi_mflo, jal_sel, jr,
     input [2:0]  alu_ctrl,
     input [4:0]  ra3,
     input [31:0] instr, rd_dm, pc_current, alu_out, wd_dm, rd3
@@ -17,7 +17,7 @@ module datapath (
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};
     assign jta = {pc_plus4[29:0], 2'b00};
-    assign pc_jmp_addr = {pc_plus4[29:0], 2'b0};
+    assign pc_jmp_addr = {pc_plus4[29:0], 2'b00};
         
     // --- PC Logic --- //
     adder pc_plus_br (

@@ -44,7 +44,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/hex_to_7seg.v
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/led_mux.v
-  C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/new/left_shift_2.v
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v
   C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v

@@ -20,7 +20,10 @@ module auxdec (
                 6'b01_1000: aux_ctrl = 6'b0_1_0_00_0; // JR
                 6'b01_0000: aux_ctrl = 6'b0_0_0_10_0; // SLL
                 6'b01_0010: aux_ctrl = 6'b0_0_0_11_0; // SLR
-                default:    ctrl = 3'b010_0; // ADD
+                default:    begin
+                    ctrl = 3'b010_0; // ADD
+                    aux_ctrl = 6'b0_0_0_00_x;
+                end
             endcase
             2'b01: ctrl = 3'b110;          // SUB
             default: case (funct)
@@ -30,7 +33,7 @@ module auxdec (
                 6'b10_0010: ctrl = 4'b110_0; // SUB
                 6'b01_1001: ctrl = 4'b011_1; // MULTU
                 6'b10_1010: ctrl = 4'b111_0; // SLT
-                default:    ctrl = 4'bxxx_x;
+                default:    ctrl = 4'b000_0; // Should bever be don't care 
             endcase
         endcase
     end
