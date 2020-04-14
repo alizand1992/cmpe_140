@@ -13,12 +13,12 @@ module auxdec (
 
     always @ (alu_op, funct) begin
         case (alu_op)
-            2'b00: case(funct) begin
+            2'b00: case(funct) 
                 6'b01_0000: aux_ctrl = 2'b1_0; // MFHI
                 6'b01_0010: aux_ctrl = 2'b0_0; // MFLO
                 6'b01_1000: aux_ctrl = 2'b0_1; // JR
-                6'b01_0000: // SLL
-                6'b01_0010: // SLR
+//                6'b01_0000: // SLL
+//                6'b01_0010: // SLR
                 default:    ctrl = 3'b010; // ADD
             endcase
             2'b01: ctrl = 3'b110;          // SUB
