@@ -50,18 +50,18 @@ module datapath (
     );
 
     // --- RF Logic --- //
-    mux2 #(5) reg_dst1_mux (
+    mux2 #(5) reg_dst1 (
         .sel(reg_dst_1), .a(instr[20:16]), .b(instr[15:11]),
         .y(dst_1_2)
     );
         
-    mux2 #(5) reg_dst2_mux (
+    mux2 #(5) reg_dst2 (
         .sel(reg_dst_2), .a(dst_1_2), .b(r31),
         .y(dst_2_3)
     );
 
-    mux2 #(5) reg_dst3_mux (
-        .sel(reg_dst_3), .a(dst_2_3), .b(0),
+    mux2 #(5) reg_dst3 (
+        .sel(reg_dst_3), .a(dst_2_3), .b(5'b0),
         .y(rf_wa)
     );
 

@@ -13,42 +13,26 @@ module mips (
     
     wire       branch;
     wire       jump;
-    wire       reg_dst;
+    wire       reg_dst_1, reg_dst_2, reg_dst_3;
     wire       we_reg;
     wire       alu_src;
     wire       dm2reg;
     wire [2:0] alu_ctrl;
 
     datapath dp (
-            .clk            (clk),
-            .rst            (rst),
-            .branch         (branch),
-            .jump           (jump),
-            .reg_dst        (reg_dst),
-            .we_reg         (we_reg),
-            .alu_src        (alu_src),
-            .dm2reg         (dm2reg),
-            .alu_ctrl       (alu_ctrl),
-            .ra3            (ra3),
-            .instr          (instr),
-            .rd_dm          (rd_dm),
-            .pc_current     (pc_current),
-            .alu_out        (alu_out),
-            .wd_dm          (wd_dm),
-            .rd3            (rd3)
-        );
+        .clk(clk), .rst(rst), .branch(branch), .jump(jump), 
+        .reg_dst_1(reg_dst_1), .reg_dst_2(reg_dst_2), .reg_dst_3(reg_dst_3), 
+        .we_reg(we_reg), .alu_src(alu_src), .dm2reg(dm2reg), .alu_ctrl(alu_ctrl), 
+        .ra3(ra3), .instr(instr), .rd_dm(rd_dm), .pc_current(pc_current), 
+        .alu_out(alu_out), .wd_dm(wd_dm), .rd3(rd3) 
+    );
 
     controlunit cu (
-            .opcode         (instr[31:26]),
-            .funct          (instr[5:0]),
-            .branch         (branch),
-            .jump           (jump),
-            .reg_dst        (reg_dst),
-            .we_reg         (we_reg),
-            .alu_src        (alu_src),
-            .we_dm          (we_dm),
-            .dm2reg         (dm2reg),
-            .alu_ctrl       (alu_ctrl)
-        );
+        .opcode(instr[31:26]), .funct(instr[5:0]),
+
+        .branch(branch), .jump(jump), .reg_dst_1(reg_dst_1), .reg_dst_2(reg_dst_2), 
+        .reg_dst_3(reg_dst_3), .we_reg(we_reg), .alu_src(alu_src), .we_dm(we_dm), 
+        .dm2reg(dm2reg), .alu_ctrl(alu_ctrl) 
+    );
 
 endmodule
