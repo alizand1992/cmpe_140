@@ -10,17 +10,17 @@ module auxdec (
     reg [4:0] aux_ctrl;
 
     assign {alu_ctrl, mult_w_en} = ctrl;
-    assign {mfhi_mflo, jr, mult_sel, shift_op} = aux_ctrl;
+    assign {mfhi_mflo, jr, mult_sel, shift_op, mult_w_en} = aux_ctrl;
 
     always @ (alu_op, funct) begin
         case (alu_op)
             2'b00: case(funct) 
-                6'b01_0000: aux_ctrl = 2'b1_0_1_00; // MFHI
-                6'b01_0010: aux_ctrl = 2'b0_0_1_00; // MFLO
-                6'b01_1000: aux_ctrl = 2'b0_1_0_00; // JR
-                6'b01_0000: aux_ctrl = 2'b0_1_0_10; // SLL
-                6'b01_0010: aux_ctrl = 2'b0_1_0_11; // SLR
-                default:    ctrl = 3'b010; // ADD
+                6'b01_0000: aux_ctrl = 2'b1_0_1_00_0; // MFHI
+                6'b01_0010: aux_ctrl = 2'b0_0_1_00_0; // MFLO
+                6'b01_1000: aux_ctrl = 2'b0_1_0_00_0; // JR
+                6'b01_0000: aux_ctrl = 2'b0_1_0_10_0; // SLL
+                6'b01_0010: aux_ctrl = 2'b0_1_0_11_0; // SLR
+                default:    ctrl = 3'b010_0; // ADD
             endcase
             2'b01: ctrl = 3'b110;          // SUB
             default: case (funct)

@@ -6,7 +6,12 @@ module maindec (
 );
     reg [8:0] ctrl;
 
-    assign {branch, jump, reg_dst_1, reg_dst_2, reg_dst_3, we_reg, alu_src, we_dm, dm2reg, jal_sel, alu_op} = ctrl;
+    assign {
+        branch, jump, 
+        reg_dst_1, reg_dst_2, reg_dst_3, 
+        we_reg, alu_src, we_dm, dm2reg, 
+        jal_sel, alu_op
+    } = ctrl;
 
     always @ (opcode) begin
         case (opcode)
@@ -16,7 +21,7 @@ module maindec (
             6'b00_0010: ctrl = 12'b0_1_0_0_0_0_0_0_0_0_00; // J
             6'b10_1011: ctrl = 12'b0_0_0_0_0_0_1_1_0_0_00; // SW
             6'b10_0011: ctrl = 12'b0_0_0_0_0_1_1_0_1_0_00; // LW
-            6'b00_0011: ctrl = 12'b0_1_0_1_0_1_0_0_0_1_00; // 3/NA JAL
+            6'b00_0011: ctrl = 12'b0_1_0_1_0_1_0_0_0_1_00; // JAL
             default:    ctrl = 12'bx_x_x_x_x_x_x_x_x_x_xx;
         endcase
     end

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 14 01:19:52 2020
-# Process ID: 16244
+# Start of session at: Tue Apr 14 12:24:07 2020
+# Process ID: 14424
 # Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/synth_1
 # Command line: vivado.exe -log mips_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_fpga.tcl
 # Log file: C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/synth_1/mips_fpga.vds
@@ -16,14 +16,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2332 
+INFO: Helper process launched with PID 17748 
 WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:18]
 WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:19]
 WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:20]
 WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:21]
 WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:22]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 678.176 ; gain = 181.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 677.012 ; gain = 181.695
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mips_fpga' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/mips_fpga.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/clk_gen.v:1]
@@ -105,7 +105,7 @@ WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
 WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 222.563
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 223.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -118,10 +118,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 222.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 223.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 222.563
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 718.902 ; gain = 223.586
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -133,33 +133,34 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/mips_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 864.609 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 862.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 864.609 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 862.809 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v:11]
 WARNING: [Synth 8-327] inferring latch for variable 'mult_out_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v:19]
 WARNING: [Synth 8-327] inferring latch for variable 'ctrl_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:12]
 WARNING: [Synth 8-327] inferring latch for variable 'aux_ctrl_reg' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,7 +187,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 9     
 	  33 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 1     
-	  51 Input     32 Bit        Muxes := 1     
+	  22 Input     32 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
@@ -268,7 +269,7 @@ Detailed RTL Component Info :
 Module imem 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  51 Input     32 Bit        Muxes := 1     
+	  22 Input     32 Bit        Muxes := 1     
 Module led_mux 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -294,153 +295,19 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v:19]
-DSP Report: Generating DSP dp/alu/mult_out0, operation Mode is: A*B.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: Generating DSP dp/alu/mult_out0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: Generating DSP dp/alu/mult_out0, operation Mode is: A*B.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: Generating DSP dp/alu/mult_out0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-DSP Report: operator dp/alu/mult_out0 is absorbed into DSP dp/alu/mult_out0.
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/aux_ctrl_reg[0]' (LD) to 'mips_top/mips/cu/ad/aux_ctrl_reg[4]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/aux_ctrl_reg[1]' (LD) to 'mips_top/mips/cu/ad/aux_ctrl_reg[4]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/aux_ctrl_reg[2]' (LD) to 'mips_top/mips/cu/ad/aux_ctrl_reg[4]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/cu/ad/aux_ctrl_reg[3]' (LD) to 'mips_top/mips/cu/ad/aux_ctrl_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/cu/ad/aux_ctrl_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mips_top/mips/dp/pc_reg/q_reg[0] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[31][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[15][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[23][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[27][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[11][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[19][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[29][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[13][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[21][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[25][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[9][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[17][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[30][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[14][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[22][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[26][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[10][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[18][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[28][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[12][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[20][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[24][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][28]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[8][28]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[16][28]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][28] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[31][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[15][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[23][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[27][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[11][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[19][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[29][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[13][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[21][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[25][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[9][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[17][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[30][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[14][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[22][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[26][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[10][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[18][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[28][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[12][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[20][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[24][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][12]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[8][12]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[16][12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][12] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[31][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[15][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[23][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[27][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[11][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[19][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[29][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[13][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[21][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[25][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[9][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[17][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[30][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[14][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[22][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[26][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[10][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[18][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[28][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[12][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[20][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[24][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][29]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[8][29]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[16][29]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][29] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[31][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[15][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[23][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[27][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[11][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[19][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[29][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[13][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[21][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[25][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[25][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[9][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[17][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[17][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[30][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[14][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[22][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[26][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[10][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[18][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[28][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[12][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[20][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[24][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[8][13]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[8][13]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[16][13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][13] )
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[31][30]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][30]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[15][30]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][30]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[23][30]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][30]'
-INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/rf/rf_reg[27][30]' (FDE) to 'mips_top/mips/dp/rf/rf_reg[29][30]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/rf/rf_reg[16][3] )
+DSP Report: Generating DSP mips/dp/alu/mult_out0, operation Mode is: A*B.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: Generating DSP mips/dp/alu/mult_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: Generating DSP mips/dp/alu/mult_out0, operation Mode is: A*B.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: Generating DSP mips/dp/alu/mult_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+DSP Report: operator mips/dp/alu/mult_out0 is absorbed into DSP mips/dp/alu/mult_out0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/\mips_top/mips/dp/pc_reg/q_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/alu/mult_out_reg[63]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/alu/mult_out_reg[62]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/alu/mult_out_reg[61]) is unused and will be removed from module mips_fpga.
@@ -507,8 +374,12 @@ WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/alu/mult_out_reg[1]
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/dp/alu/mult_out_reg[0]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[0]) is unused and will be removed from module mips_fpga.
 WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[4]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[3]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[2]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[1]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/aux_ctrl_reg[0]) is unused and will be removed from module mips_fpga.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -527,10 +398,10 @@ DSP: Preliminary Mapping  Report (see note below)
 +------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|mips        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|mips        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|mips        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|mips        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips_top    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips_top    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips_top    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips_top    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -547,13 +418,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 862.809 ; gain = 367.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -578,8 +449,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[3]) is unused and will be removed from module mips_fpga.
+WARNING: [Synth 8-3332] Sequential element (mips_top/mips/cu/ad/ctrl_reg[1]) is unused and will be removed from module mips_fpga.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 864.609 ; gain = 368.270
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 863.699 ; gain = 368.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -603,7 +476,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -616,7 +489,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -628,25 +501,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -663,64 +536,63 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     3|
-|2     |CARRY4   |    36|
-|3     |LUT1     |     2|
-|4     |LUT2     |    69|
-|5     |LUT3     |   127|
-|6     |LUT4     |   119|
-|7     |LUT5     |   240|
-|8     |LUT6     |   204|
-|9     |MUXF7    |    72|
-|10    |RAM64X1S |    32|
-|11    |FDCE     |    31|
-|12    |FDRE     |   292|
-|13    |LD       |    35|
-|14    |IBUF     |    12|
-|15    |OBUF     |    13|
+|2     |CARRY4   |    44|
+|3     |LUT1     |     3|
+|4     |LUT2     |    70|
+|5     |LUT3     |    52|
+|6     |LUT4     |    54|
+|7     |LUT5     |   284|
+|8     |LUT6     |   811|
+|9     |MUXF7    |   447|
+|10    |MUXF8    |   128|
+|11    |RAM64X1S |    32|
+|12    |FDCE     |    30|
+|13    |FDRE     |  1060|
+|14    |LD       |    32|
+|15    |IBUF     |    12|
+|16    |OBUF     |    13|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------------+-----------------+------+
 |      |Instance       |Module           |Cells |
 +------+---------------+-----------------+------+
-|1     |top            |                 |  1287|
+|1     |top            |                 |  3075|
 |2     |  bd           |button_debouncer |    20|
 |3     |  clk_gen      |clk_gen          |    56|
 |4     |  led_mux      |led_mux          |    29|
-|5     |  mips_top     |mips_top         |  1124|
+|5     |  mips_top     |mips_top         |  2912|
 |6     |    dmem       |dmem             |    32|
-|7     |    mips       |mips             |  1092|
-|8     |      cu       |controlunit      |   100|
-|9     |        ad     |auxdec           |   100|
-|10    |      dp       |datapath         |   992|
-|11    |        alu    |alu              |    80|
-|12    |        pc_reg |dreg             |   247|
-|13    |        rf     |regfile          |   665|
+|7     |    mips       |mips             |  2880|
+|8     |      dp       |datapath         |  2880|
+|9     |        alu    |alu              |    87|
+|10    |        pc_reg |dreg             |   409|
+|11    |        rf     |regfile          |  2384|
 +------+---------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 870.703 ; gain = 228.656
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 870.703 ; gain = 374.363
+Synthesis finished with 0 errors, 0 critical warnings and 76 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 877.523 ; gain = 238.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 877.523 ; gain = 382.207
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 683 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 880.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 67 instances were transformed.
-  LD => LDCE: 35 instances
+  A total of 64 instances were transformed.
+  LD => LDCE: 32 instances
   RAM64X1S => RAM64X1S (RAMS64E): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-196 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+63 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 876.477 ; gain = 586.527
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.477 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 880.172 ; gain = 589.898
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 880.172 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/synth_1/mips_fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mips_fpga_utilization_synth.rpt -pb mips_fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 01:20:30 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 12:24:59 2020...
