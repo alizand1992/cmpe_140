@@ -57,13 +57,13 @@ module datapath (
         
     mux2 #(5) reg_dst2 (
         .sel(reg_dst_2), .a(dst_1_2), .b(r31),
-        .y(dst_2_3)
-    );
-
-    mux2 #(5) reg_dst3 (
-        .sel(reg_dst_3), .a(dst_2_3), .b(5'b0),
         .y(rf_wa)
     );
+
+//    mux2 #(5) reg_dst3 (
+//        .sel(reg_dst_3), .a(dst_2_3), .b(5'b0),
+//        .y(rf_wa)
+//    );
 
     regfile rf (
         .clk(clk), .we(we_reg), .ra1(instr[25:21]), .ra2(instr[20:16]), 
