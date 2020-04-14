@@ -11,13 +11,14 @@ module datapath (
     wire [31:0] pc_plus4, pc_pre, pc_next, sext_imm, 
                 ba, bta, jta, alu_pa, alu_pb, mult_hi, 
                 mult_lo, mult_res, mem_jal, jal_res, 
-                wd_rf, pc_jmp_addr;
+                wd_rf, pc_jmp_addr, pc_jmp_jr;
     wire [63:0] mult_out;
     
     assign pc_src = branch & zero;
     assign ba = {sext_imm[29:0], 2'b00};
     assign jta = {pc_plus4[31:28], instr[25:0], 2'b00};
-    
+    assign pc_jmp_addr = {pc_plus4[29:0], 2'b0};
+        
     // --- PC Logic --- //
     dreg pc_reg (
         .clk(clk), .rst(rst), .d(pc_next),
@@ -29,11 +30,6 @@ module datapath (
         .y(pc_plus4)
     );
         
-    left_shift_2 ls2 (
-        .in(pc_plus4),
-        .out(pc_jmp_addr)
-    );
-
     adder pc_plus_br (
         .a(pc_plus4), .b(ba),
         .y(bta)
@@ -46,6 +42,11 @@ module datapath (
 
     mux2 #(32) pc_jmp_mux (
         .sel(jump), .a(pc_pre), .b(jta),
+        .y(pc_jmp_jr)
+    );
+    
+    mux2 #(32) jr_mux (
+        .sel(jr), .a(pc_jmp_jr), .b(rd1),
         .y(pc_next)
     );
 

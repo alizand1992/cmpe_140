@@ -3,7 +3,8 @@ Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 79184bc269314175be381d04846f8ad9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'r31' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v:71]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'b' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v:49]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'r31' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v:72]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'shift_op' [C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.srcs/sources_1/imports/Downloads/lab5_processor_design_1/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v:28]
 Completed static elaboration
 Starting simulation data flow analysis
@@ -12,7 +13,6 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.dreg
 Compiling module xil_defaultlib.adder
-Compiling module xil_defaultlib.left_shift_2
 Compiling module xil_defaultlib.mux2(WIDTH=32)
 Compiling module xil_defaultlib.mux2(WIDTH=5)
 Compiling module xil_defaultlib.regfile

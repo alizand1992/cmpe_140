@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 14 12:50:12 2020
-# Process ID: 15356
+# Start of session at: Tue Apr 14 13:17:10 2020
+# Process ID: 19608
 # Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/impl_1
 # Command line: vivado.exe -log mips_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mips_fpga.tcl -notrace
 # Log file: C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/impl_1/mips_fpga.vdi
@@ -14,7 +14,7 @@ Command: open_checkpoint mips_fpga_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 288.203 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 289.621 ; gain = 0.000
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Netlist 29-17] Analyzing 651 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -27,16 +27,16 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.453 . Memory (MB): peak = 1194.734 ; gain = 8.293
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.341 . Memory (MB): peak = 1194.336 ; gain = 4.969
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.453 . Memory (MB): peak = 1194.734 ; gain = 8.293
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1194.734 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.341 . Memory (MB): peak = 1194.336 ; gain = 4.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1194.336 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM64X1S => RAM64X1S (RAMS64E): 32 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
-open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1194.734 ; gain = 906.531
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.336 ; gain = 904.715
 Command: write_bitstream -force mips_fpga.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -66,9 +66,9 @@ Creating bitstream...
 Writing bitstream ./mips_fpga.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Apr 14 12:50:56 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/aliza/Documents/cmpe_140/assignment_6/assignment_6.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Apr 14 13:17:43 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1655.332 ; gain = 460.598
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 12:50:56 2020...
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1663.938 ; gain = 469.602
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 13:17:43 2020...
