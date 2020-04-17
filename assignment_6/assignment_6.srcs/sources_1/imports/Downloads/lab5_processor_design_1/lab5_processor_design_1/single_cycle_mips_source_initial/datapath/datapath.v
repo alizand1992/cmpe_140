@@ -57,7 +57,7 @@ module datapath (
     );
         
     mux2 #(5) reg_dst2 (
-        .sel(reg_dst_2), .a(dst_1_2), .b(r31),
+        .sel(reg_dst_2), .a(dst_1_2), .b(5'b11111),
         .y(rf_wa)
     );
 

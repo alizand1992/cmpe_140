@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="279495000fs"></ZoomStartTime>
-      <ZoomEndTime time="430295001fs"></ZoomEndTime>
-      <Cursor1Time time="410395000fs"></Cursor1Time>
+      <ZoomStartTime time="303291666fs"></ZoomStartTime>
+      <ZoomEndTime time="334391667fs"></ZoomEndTime>
+      <Cursor1Time time="365000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="105"></NameColumnWidth>
+      <NameColumnWidth column_width="97"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="40" />
+   <WVObjectSize size="46" />
    <wvobject fp_name="/tb_mips_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -99,7 +99,6 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/rf" type="array">
       <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/n" type="array">
       <obj_property name="ElementShortName">n[31:0]</obj_property>
@@ -180,5 +179,29 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/zero" type="logic">
       <obj_property name="ElementShortName">zero</obj_property>
       <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/cu/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/cu/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/cu/ad/funct" type="array">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf_wa" type="array">
+      <obj_property name="ElementShortName">rf_wa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_wa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/reg_dst_1" type="logic">
+      <obj_property name="ElementShortName">reg_dst_1</obj_property>
+      <obj_property name="ObjectShortName">reg_dst_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/reg_dst_2" type="logic">
+      <obj_property name="ElementShortName">reg_dst_2</obj_property>
+      <obj_property name="ObjectShortName">reg_dst_2</obj_property>
    </wvobject>
 </wave_config>
