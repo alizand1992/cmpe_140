@@ -17,7 +17,7 @@ module auxdec (
                 default:    ctrl = 10'b010_0_0_0_00_0_0; // ADD
             endcase
 
-            2'b01: ctrl = 10'b110_0_0_0_00_0_0;
+            2'b01: ctrl = 10'b110_0_0_0_00_0_0; // SUB
              
             default: begin
                 case (funct)
