@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Apr 14 14:18:26 2020
+| Date             : Sat Apr 18 05:16:28 2020
 | Host             : LAPTOP-8D7LEK0E running 64-bit major release  (build 9200)
 | Command          : report_power -file mips_fpga_power_routed.rpt -pb mips_fpga_power_summary_routed.pb -rpx mips_fpga_power_routed.rpx
 | Design           : mips_fpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.091        |
+| Total On-Chip Power (W)  | 0.093        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.019        |
+| Dynamic (W)              | 0.021        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -52,19 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.002 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |     3068 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1239 |     20800 |            5.96 |
-|   Register               |    <0.001 |     1124 |     41600 |            2.70 |
-|   CARRY4                 |    <0.001 |       44 |      8150 |            0.54 |
-|   F7/F8 Muxes            |    <0.001 |      575 |     32600 |            1.76 |
-|   Others                 |     0.000 |       15 |       --- |             --- |
-|   BUFG                   |     0.000 |        2 |        32 |            6.25 |
+| Clocks                   |     0.001 |        3 |       --- |             --- |
+| Slice Logic              |    <0.001 |     3267 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1359 |     20800 |            6.53 |
+|   Register               |    <0.001 |     1191 |     41600 |            2.86 |
+|   CARRY4                 |    <0.001 |       48 |      8150 |            0.59 |
+|   F7/F8 Muxes            |    <0.001 |      574 |     32600 |            1.76 |
+|   Others                 |     0.000 |       19 |       --- |             --- |
+|   BUFG                   |     0.000 |        3 |        32 |            9.38 |
 |   LUT as Distributed RAM |     0.000 |       32 |      9600 |            0.33 |
-| Signals                  |     0.001 |     1977 |       --- |             --- |
-| I/O                      |     0.016 |       25 |       106 |           23.58 |
+| Signals                  |     0.001 |     2223 |       --- |             --- |
+| DSPs                     |     0.000 |        3 |        90 |            3.33 |
+| I/O                      |     0.018 |       25 |       106 |           23.58 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.091 |          |           |                 |
+| Total                    |     0.093 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -143,8 +144,7 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| mips_fpga |     0.019 |
-|   clk_gen |     0.001 |
+| mips_fpga |     0.021 |
 +-----------+-----------+
 
 
