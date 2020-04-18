@@ -3,7 +3,9 @@ module datapath (
     input dm2reg, mult_w_en, mult_sel, mfhi_mflo, jal_sel, jr,
     input [2:0]  alu_ctrl,
     input [4:0]  ra3,
-    input [31:0] instr, rd_dm, pc_current, alu_out, wd_dm, rd3
+    input [31:0] instr, rd_dm, pc_current, alu_out, rd3,
+    
+    output [31:0] wd_dm    
 );
 
     wire        pc_src, zero;
@@ -84,12 +86,12 @@ module datapath (
     );
 
     reg_32 hi_reg (
-        .we(mult_w_en), .D(mult_out[63:32]),
+        .we(mult_w_en), .clk(clk), .D(mult_out[63:32]),
         .Q(mult_hi)
     );
 
     reg_32 lo_reg (
-        .we(mult_w_en), .D(mult_out[31:0]),
+        .we(mult_w_en), .clk(clk), .D(mult_out[31:0]),
         .Q(mult_lo)
     );
     
@@ -109,7 +111,7 @@ module datapath (
     );
 
     mux2 #(32) mult_mux (
-        .sel(mfhi_mflo), .a(jal_res), .b(mult_res),
+        .sel(mult_sel), .a(jal_res), .b(mult_res),
         .y(wd_rf)
     );
 

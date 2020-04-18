@@ -4,13 +4,11 @@ module maindec (
     output reg_dst_1, jal_sel,
     output [1:0] alu_op
 );
-    reg [11:0] ctrl;
+    reg [9:0] ctrl;
 
     assign {
-        branch, jump, 
-        reg_dst_1, 
-        we_reg, alu_src, we_dm, dm2reg, 
-        jal_sel, alu_op
+        branch, jump, reg_dst_1, we_reg, alu_src, 
+        we_dm, dm2reg, jal_sel, alu_op
     } = ctrl;
 
     always @ (opcode) begin

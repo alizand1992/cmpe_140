@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="303291666fs"></ZoomStartTime>
-      <ZoomEndTime time="334391667fs"></ZoomEndTime>
-      <Cursor1Time time="365000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="94256894fs"></ZoomEndTime>
+      <Cursor1Time time="40000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="97"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="134"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="46" />
+   <WVObjectSize size="47" />
    <wvobject fp_name="/tb_mips_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,10 +31,19 @@
    <wvobject fp_name="/tb_mips_top/pc_current" type="array">
       <obj_property name="ElementShortName">pc_current[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc_current[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/jta" type="array">
+      <obj_property name="ElementShortName">jta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jta[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/instr" type="array">
       <obj_property name="ElementShortName">instr[31:0]</obj_property>
       <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/pc_plus4" type="array">
+      <obj_property name="ElementShortName">pc_plus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus4[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/alu_out" type="array">
       <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
@@ -99,6 +108,7 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/rf" type="array">
       <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/rf/n" type="array">
       <obj_property name="ElementShortName">n[31:0]</obj_property>
@@ -139,10 +149,6 @@
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/jr" type="logic">
       <obj_property name="ElementShortName">jr</obj_property>
       <obj_property name="ObjectShortName">jr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/pc_plus4" type="array">
-      <obj_property name="ElementShortName">pc_plus4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_plus4[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mips_top/DUT/mips/dp/pc_pre" type="array">
       <obj_property name="ElementShortName">pc_pre[31:0]</obj_property>

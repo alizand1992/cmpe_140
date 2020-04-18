@@ -1,6 +1,6 @@
 module mips (
     input clk, rst,
-    input [4:0]  ra3,
+    input [4:0] ra3,
     input [31:0] instr, rd_dm,
     output we_dm,
     output [31:0] pc_current, alu_out, wd_dm, rd3
@@ -23,9 +23,9 @@ module mips (
         .opcode(instr[31:26]), .funct(instr[5:0]),
 
         .branch(branch), .jump(jump), .reg_dst_1(reg_dst_1), .reg_dst_2(reg_dst_2), 
-        .reg_dst_3(reg_dst_3), .we_reg(we_reg), .alu_src(alu_src), .we_dm(we_dm), 
-        .dm2reg(dm2reg), .mfhi_mflo(mfhi_mflo), .jr(jr), .mult_sel(mult_sel), 
-        .jal_sel(jal_sel), .shift_op(shift_op), .alu_ctrl(alu_ctrl), .mult_w_en(mult_w_en)
+        .we_reg(we_reg), .alu_src(alu_src), .we_dm(we_dm), .dm2reg(dm2reg), 
+        .mfhi_mflo(mfhi_mflo), .jr(jr), .mult_sel(mult_sel), .jal_sel(jal_sel), 
+        .shift_op(shift_op), .alu_ctrl(alu_ctrl), .mult_w_en(mult_w_en)
     );
 
 endmodule
