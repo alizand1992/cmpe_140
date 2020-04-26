@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../single_cycle_mips_source_initial/datapath/adder.v" \
+"../../../../single_cycle_mips_source_initial/datapath/alu.v" \
+"../../../../single_cycle_mips_source_initial/control_unit/auxdec.v" \
+"../../../../single_cycle_mips_source_initial/control_unit/controlunit.v" \
+"../../../../single_cycle_mips_source_initial/datapath/datapath.v" \
+"../../../../single_cycle_mips_source_initial/memory/dmem.v" \
+"../../../../single_cycle_mips_source_initial/datapath/dreg.v" \
+"../../../../single_cycle_mips_source_initial/memory/imem.v" \
+"../../../../single_cycle_mips_source_initial/control_unit/maindec.v" \
+"../../../../single_cycle_mips_source_initial/mips/mips.v" \
+"../../../../single_cycle_mips_source_initial/mips/mips_top.v" \
+"../../../../single_cycle_mips_source_initial/datapath/mux2.v" \
+"../../../../single_cycle_mips_source_initial/datapath/mux4.v" \
+"../../../../single_cycle_mips_source_initial/datapath/prod_reg.v" \
+"../../../../single_cycle_mips_source_initial/datapath/regfile.v" \
+"../../../../single_cycle_mips_source_initial/datapath/signext.v" \
+"../../../../single_cycle_mips_source_initial/testbench/tb_mips_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
