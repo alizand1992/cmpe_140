@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 100 fs
+err          13
+err          14
+err          15
+$finish called at time : 1086 ns : File "D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_TB.v" Line 24

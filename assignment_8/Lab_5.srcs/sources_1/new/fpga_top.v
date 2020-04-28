@@ -6,7 +6,7 @@ module fpga_top(
 );
 
     wire clk_5KHz, clk_sec;
-    wire [31:0] gpo1, gpo2;
+    wire [31:0] gpo1, gpo2, pc;
     wire [15:0] hex;
 
 
@@ -19,7 +19,7 @@ module fpga_top(
         .clk(clk), .rst(rst), .gpI1({27'b0, sw4, sw3, sw2, sw1, sw10}),
         .gpI2(gpo1),
         
-        .gpO2(gpo2), .gpO1(gpo1)
+        .gpO2(gpo2), .gpO1(gpo1), .pc(pc)
     );
         
     mux2 #(16) gpo_mux (

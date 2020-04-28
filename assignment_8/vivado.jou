@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 28 00:57:10 2020
+# Process ID: 12364
+# Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9880 C:\Users\aliza\Documents\cmpe_140\assignment_8\Lab_5.xpr
+# Log file: C:/Users/aliza/Documents/cmpe_140/assignment_8/vivado.log
+# Journal file: C:/Users/aliza/Documents/cmpe_140/assignment_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/AD/WE}} 
+restart
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/processor/mips/we_dm}} 
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/processor/mips/cu/md/we_dm}} 
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/processor/mips/instr}} 
+restart
+run 10 ns
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/processor/mips/dp/pc_plus4}} 
+run 10 ns
+run 10 ns
+save_wave_config {C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg}
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+restart
+run 100 ns
+restart
+run 90 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 80 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+restart
+run 80 ns
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+close_sim

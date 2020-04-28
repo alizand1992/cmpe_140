@@ -7,7 +7,7 @@ module main_ad(
         output reg [1:0] RdSel
     );
     
-    always @(*) begin
+    always @(WE) begin
         casex(A)
             10'b0000_xxxx_xx:begin
                 WE1 = 1'b0;

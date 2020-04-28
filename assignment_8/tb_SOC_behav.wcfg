@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_SOC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_SOC" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="60000000fs"></ZoomEndTime>
+      <Cursor1Time time="30000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="126"></NameColumnWidth>
+      <ValueColumnWidth column_width="70"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/tb_SOC/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/gpI1" type="array">
+      <obj_property name="ElementShortName">gpI1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpI1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/gpI2" type="array">
+      <obj_property name="ElementShortName">gpI2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpI2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/gpO1" type="array">
+      <obj_property name="ElementShortName">gpO1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpO1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/gpO2" type="array">
+      <obj_property name="ElementShortName">gpO2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpO2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/gpI1" type="array">
+      <obj_property name="ElementShortName">gpI1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpI1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/gpI2" type="array">
+      <obj_property name="ElementShortName">gpI2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpI2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/gpO1" type="array">
+      <obj_property name="ElementShortName">gpO1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpO1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/gpO2" type="array">
+      <obj_property name="ElementShortName">gpO2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpO2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/d_mem_data" type="array">
+      <obj_property name="ElementShortName">d_mem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_mem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/fact_data" type="array">
+      <obj_property name="ElementShortName">fact_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fact_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/gpio_data" type="array">
+      <obj_property name="ElementShortName">gpio_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/address" type="array">
+      <obj_property name="ElementShortName">address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/we2" type="logic">
+      <obj_property name="ElementShortName">we2</obj_property>
+      <obj_property name="ObjectShortName">we2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/we1" type="logic">
+      <obj_property name="ElementShortName">we1</obj_property>
+      <obj_property name="ObjectShortName">we1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/wem" type="logic">
+      <obj_property name="ElementShortName">wem</obj_property>
+      <obj_property name="ObjectShortName">wem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/RdSel" type="array">
+      <obj_property name="ElementShortName">RdSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RdSel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/AD/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mips/we_dm" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">we_dm</obj_property>
+      <obj_property name="ObjectShortName">we_dm</obj_property>
+      <obj_property name="label">we_dm(Processor)</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mips/cu/md/we_dm" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">we_dm</obj_property>
+      <obj_property name="ObjectShortName">we_dm</obj_property>
+      <obj_property name="label">we_dm (MD)</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mips/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mips/dp/pc_plus4" type="array">
+      <obj_property name="ElementShortName">pc_plus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus4[31:0]</obj_property>
+   </wvobject>
+</wave_config>

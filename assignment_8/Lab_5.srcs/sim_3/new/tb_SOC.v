@@ -1,7 +1,8 @@
 module tb_SOC;
 
     reg         clk, rst;
-    wire [31:0] gpI1, gpI2, gpO1, gpO2;
+    wire [31:0] gpI2, gpO1, gpO2, pc;
+    reg [31:0] gpI1;
     
     soc DUT (
             .clk        (clk),
@@ -9,7 +10,8 @@ module tb_SOC;
             .gpI1       (gpI1),
             .gpI2       (gpI2),
             .gpO1       (gpO1),
-            .gpO2       (gpO2)
+            .gpO2       (gpO2),
+            .pc         (pc)
         );
     
     task tick; 
@@ -27,9 +29,12 @@ module tb_SOC;
     end
     endtask
     
+    assign gpI2 = gpO1;
+    
     initial begin
         reset;
-        while(pc_current != 32'h58) tick;
+        gpI1 = {27'b0,5'b00100};
+        while(pc != 32'h48) tick;
         $finish;
     end
 

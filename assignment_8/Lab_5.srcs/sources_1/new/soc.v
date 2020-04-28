@@ -1,9 +1,9 @@
 module soc (
     input clk, rst,
     input [31:0] gpI1, gpI2,
-    output [31:0] gpO1, gpO2
+    output [31:0] gpO1, gpO2, pc
 );
-    wire [31:0] d_mem_data, fact_data, gpio_data, read_data, write_data, pc, instruction, address;
+    wire [31:0] d_mem_data, fact_data, gpio_data, read_data, write_data, instruction, address;
     wire we, we2, we1, wem;
     wire [1:0]  RdSel;
     
@@ -25,7 +25,7 @@ module soc (
     );
     
     imem instruction_memory(
-        .a      (pc),
+        .a      (pc[7:2]),
         .y      (instruction)
     );
     
@@ -59,7 +59,7 @@ module soc (
         .we     (we2),
         .a      (address[3:2]), 
         .wd     (write_data[3:0]),
-       .rd      (gpio_data)
+       .rd      (fact_data)
     );
     
     mux4 #(32) data_mux(
