@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Factorial_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Factorial_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1069313701fs"></ZoomEndTime>
+      <Cursor1Time time="655000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="104"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/Factorial_TB/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/n" type="array">
+      <obj_property name="ElementShortName">n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/err" type="logic">
+      <obj_property name="ElementShortName">err</obj_property>
+      <obj_property name="ObjectShortName">err</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Factorial_TB/Fact/DP/cnt_out" type="array">
+      <obj_property name="ElementShortName">cnt_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group8" type="group">
+      <obj_property name="label">CU signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/CU/cs" type="array">
+         <obj_property name="ElementShortName">cs[2:0]</obj_property>
+         <obj_property name="ObjectShortName">cs[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/sel" type="logic">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/ld_cnt" type="logic">
+         <obj_property name="ElementShortName">ld_cnt</obj_property>
+         <obj_property name="ObjectShortName">ld_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/ld_reg" type="logic">
+         <obj_property name="ElementShortName">ld_reg</obj_property>
+         <obj_property name="ObjectShortName">ld_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/oe" type="logic">
+         <obj_property name="ElementShortName">oe</obj_property>
+         <obj_property name="ObjectShortName">oe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/gt" type="logic">
+         <obj_property name="ElementShortName">gt</obj_property>
+         <obj_property name="ObjectShortName">gt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">inMux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/inmux/in0" type="array">
+         <obj_property name="ElementShortName">in0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/inmux/in1" type="array">
+         <obj_property name="ElementShortName">in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/inmux/out" type="array">
+         <obj_property name="ElementShortName">out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group20" type="group">
+      <obj_property name="label">register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/regiseter/d" type="array">
+         <obj_property name="ElementShortName">d[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/regiseter/q" type="array">
+         <obj_property name="ElementShortName">q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">q[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group27" type="group">
+      <obj_property name="label">cnt</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/count/d" type="array">
+         <obj_property name="ElementShortName">d[3:0]</obj_property>
+         <obj_property name="ObjectShortName">d[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/count/q" type="array">
+         <obj_property name="ElementShortName">q[3:0]</obj_property>
+         <obj_property name="ObjectShortName">q[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group30" type="group">
+      <obj_property name="label">comp</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/cmp/a" type="array">
+         <obj_property name="ElementShortName">a[3:0]</obj_property>
+         <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/cmp/b" type="array">
+         <obj_property name="ElementShortName">b[3:0]</obj_property>
+         <obj_property name="ObjectShortName">b[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/cmp/lt" type="logic">
+         <obj_property name="ElementShortName">lt</obj_property>
+         <obj_property name="ObjectShortName">lt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group34" type="group">
+      <obj_property name="label">mult</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/mult/A" type="array">
+         <obj_property name="ElementShortName">A[27:0]</obj_property>
+         <obj_property name="ObjectShortName">A[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/mult/b" type="array">
+         <obj_property name="ElementShortName">b[3:0]</obj_property>
+         <obj_property name="ObjectShortName">b[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/mult/c" type="array">
+         <obj_property name="ElementShortName">c[31:0]</obj_property>
+         <obj_property name="ObjectShortName">c[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group38" type="group">
+      <obj_property name="label">outMux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/outmux/in0" type="array">
+         <obj_property name="ElementShortName">in0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/outmux/in1" type="array">
+         <obj_property name="ElementShortName">in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Factorial_TB/Fact/DP/outmux/out" type="array">
+         <obj_property name="ElementShortName">out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

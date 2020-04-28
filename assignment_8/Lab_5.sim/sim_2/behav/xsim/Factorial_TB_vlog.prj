@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Factorial/CLA_Adder.v" \
+"../../../../Factorial/CarryLookBlock.v" \
+"../../../../Factorial/Comparator.v" \
+"../../../../Factorial/D_Register.v" \
+"../../../../Factorial/Factorial.v" \
+"../../../../Factorial/Factorial_CU.v" \
+"../../../../Factorial/Factorial_DP.v" \
+"../../../../Factorial/HalfAdder.v" \
+"../../../../Factorial/Parallel_Multiplier.v" \
+"../../../../Factorial/XOR.v" \
+"../../../../single_cycle_mips_source_initial/datapath/mux2.v" \
+"../../../../Factorial/up_down_counter.v" \
+"../../../../Factorial/Factorial_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
