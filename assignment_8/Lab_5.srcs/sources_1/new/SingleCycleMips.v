@@ -4,11 +4,10 @@ module SingleCycleMips(
         input   clk, rst,
         input   [31:0] instr, rd,
         output  we,
-        output [11:2] addr,
-        output [31:0] pc, wd
+        output [31:0] addr, pc, wd
     );
     
-    
+    wire [31:0] ra3, rd3;
     
     mips mips (
             .clk            (clk),
@@ -18,7 +17,7 @@ module SingleCycleMips(
             .rd_dm          (rd),
             .we_dm          (we),
             .pc_current     (pc),
-            .alu_out        (alu_out),
+            .alu_out        (addr),
             .wd_dm          (wd),
             .rd3            (rd3)
         );

@@ -16,10 +16,10 @@ module fpga_top(
     );
     
     soc soc(
-        .clk(clk), .rst(rst), gpi1({27'b0, sw4, sw3, sw2, sw1, sw10}),
-        .gpi2(gpo1),
+        .clk(clk), .rst(rst), .gpI1({27'b0, sw4, sw3, sw2, sw1, sw10}),
+        .gpI2(gpo1),
         
-        .gpo2(gpo2), .gpo1(gpo1)
+        .gpO2(gpo2), .gpO1(gpo1)
     );
         
     mux2 #(16) gpo_mux (

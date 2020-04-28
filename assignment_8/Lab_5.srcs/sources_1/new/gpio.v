@@ -2,7 +2,7 @@ module GPIO (
     input clk, rst, we,
     input [1:0] a,
     input [31:0] wd, gpI1, gpI2,
-    output [31:0] rd
+    output [31:0] gpO1, gpO2, rd
 );
 
     wire        We2;
@@ -11,7 +11,7 @@ module GPIO (
     wire [31:0] gpio1;
     wire [31:0] gpio2;
     
-    fact_ad decoder(
+    gpio_ad decoder(
         .A      (a),
         .WE     (we),
         .WE1    (We1),
@@ -41,5 +41,8 @@ mux4 #(32) data_mux(
         .d      (gpio2),
         .y      (rd)
     );
+    
+    assign gpO1 = gpio1;
+    assign gpO2 = gpio2;
 
 endmodule
