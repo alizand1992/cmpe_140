@@ -17,7 +17,7 @@ C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim/glbl.v
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sim_3/new/tb_SOC.v,1589037959,verilog,,,,tb_SOC,,,,,,,,
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Factorial Accelerator.v,1589037959,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Factorial/Factorial.v,,FactorialAccelerator,,,,,,,,
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Gate.v,1589037959,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Factorial/HalfAdder.v,,Gate,,,,,,,,
-C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v,1589045490,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Factorial/Parallel_Multiplier.v,,Hazard_CU,,,,,,,,
+C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v,1589054670,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Factorial/Parallel_Multiplier.v,,Hazard_CU,,,,,,,,
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/PilelinedProcessor.v,1589037959,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v,,PilelinedProcessor,,,,,,,,
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v,1589038300,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Factorial/XOR.v,,SRLatch,,,,,,,,
 C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v,1589037959,verilog,,C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/gpio.v,,fact_ad,,,,,,,,

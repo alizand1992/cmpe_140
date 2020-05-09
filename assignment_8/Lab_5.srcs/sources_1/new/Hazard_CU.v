@@ -35,11 +35,7 @@ module Hazard_CU(
     
     //Stalling
     assign lwstall = (((rsD == rtE) | (rtD == rtE)) & dm2regE) | (((rsD == rtE) | (rtD == rtE)) & dm2regM);
-    
-    initial begin 
-        lwstall_reg = 0;
-    end
-    
+        
     always @(posedge clk) begin
         if(lwstall) lwstall_reg = 2'b10;
         else        lwstall_reg = lwstall_reg >> 1;    
@@ -48,7 +44,7 @@ module Hazard_CU(
     assign branchStall_1 = branchD & we_regE & ((rf_waE == rsD) | (rf_waE == rtD)); 
     assign branchStall_2 = branchD & dm2regM & ((rf_waM == rsD) | (rf_waM == rtD));
     assign branchStall = branchStall_1 | branchStall_2;
-    assign stallF = !(!(lwstall_reg)) | branchStall;
+    assign stallF = !(!(lwstall_reg)) | branchStall | lwstall;
     assign stallD = stallF;  
     assign flushE = lwstall_reg[1] | branchStall;
     
