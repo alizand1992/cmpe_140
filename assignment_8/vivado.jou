@@ -2,10 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat May  9 00:29:25 2020
-# Process ID: 2168
+# Start of session at: Sat May  9 08:26:45 2020
+# Process ID: 11400
 # Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_8
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7000 C:\Users\aliza\Documents\cmpe_140\assignment_8\Lab_5.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16116 C:\Users\aliza\Documents\cmpe_140\assignment_8\Lab_5.xpr
 # Log file: C:/Users/aliza/Documents/cmpe_140/assignment_8/vivado.log
 # Journal file: C:/Users/aliza/Documents/cmpe_140/assignment_8\vivado.jou
 #-----------------------------------------------------------
@@ -15,8 +15,108 @@ update_compile_order -fileset sources_1
 launch_simulation -simset [get_filesets sim_3 ]
 open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
 source tb_SOC.tcl
-run 80 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/data_mux}} 
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
 synth_design -rtl -name rtl_1
+current_wave_config {tb_SOC_behav.wcfg}
+add_wave {{/tb_SOC/DUT/processor/mipsPilelined/hu}} 
 restart
 run 10 ns
 run 10 ns
@@ -28,7 +128,38 @@ run 10 ns
 run 10 ns
 run 10 ns
 run 10 ns
-restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
 relaunch_sim
 restart
 run 10 ns
@@ -61,100 +192,27 @@ run 10 ns
 run 10 ns
 run 10 ns
 run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
+save_wave_config {C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg}
+relaunch_sim
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+relaunch_sim
 restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
+run 270 ns
+relaunch_sim
 current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/Go}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/GoPulse}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/GoPulseCmb}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/n}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/done}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/err}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/We2}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/We1}} 
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
+add_wave {{/tb_SOC/DUT/processor/mipsPilelined/hu/branchStall_1}} {{/tb_SOC/DUT/processor/mipsPilelined/hu/branchStall_2}} 
+relaunch_sim
+run 260 ns
 run 10 ns
 run 10 ns
 relaunch_sim
-restart
 current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/instruction}} 
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-restart
-run 70 ns
+add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/alu_outM}} 
 current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/we_dmM}} 
-run 10 ns
-run 10 ns
-run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/rf}} 
+add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/alu_out_full}} 
 restart
 run 10 ns
 run 10 ns
@@ -165,15 +223,63 @@ run 10 ns
 run 10 ns
 run 10 ns
 run 10 ns
-restart
-run 70 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/wd}} 
 run 10 ns
 run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/wd_dmM}} 
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
 restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+relaunch_sim
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
 run 10 ns
 run 10 ns
 run 10 ns
@@ -190,81 +296,15 @@ run 10 ns
 run 10 ns
 run 10 ns
 relaunch_sim
-restart
 relaunch_sim
-run 10 ns
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/processor/mipsPilelined/dp/reg_E}} 
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
 relaunch_sim
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-refresh_design
-refresh_design
+relaunch_sim
+relaunch_sim
 save_wave_config {C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg}
 close_sim
 launch_simulation -simset [get_filesets sim_3 ]
 open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
 source tb_SOC.tcl
-close_design
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/address}} 
-run 10 ns
-run 10 ns
-run 10 ns
-restart
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/write_data}} 
 restart
 run 10 ns
 run 10 ns
@@ -279,10 +319,102 @@ run 10 ns
 run 10 ns
 run 10 ns
 run 10 ns
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/NGate/en}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/NGate/i}} 
-current_wave_config {tb_SOC_behav.wcfg}
-add_wave {{/tb_SOC/DUT/Fact_Accel/NGate/o}} 
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
 restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+restart
+close_sim
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/Users/aliza/Documents/cmpe_140/assignment_8/tb_SOC_behav.wcfg
+source tb_SOC.tcl
+restart
+add_bp {C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v} 44
+remove_bps -file {C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v} -line 44
+add_bp {C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v} 44
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+remove_bps -file {C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.srcs/sources_1/new/Hazard_CU.v} -line 44
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

@@ -26,6 +26,10 @@ module fact_ad(
                 WE1 = 1'b0;
                 WE2 = 1'b0;
             end
+            default:begin
+                WE1 = 1'bx;
+                WE2 = 1'bx;
+            end
         endcase
     end
     

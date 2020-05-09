@@ -37,16 +37,6 @@ module tb_SOC;
         gpI1 = {27'b0,5'b00110};//6
         reset;
         while(pc != 32'h44) tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;
-        tick;tick;tick;tick;tick;tick;tick;tick;tick;tick;
         
         gpI1 = {27'b0,5'b01101};//13
         tick;

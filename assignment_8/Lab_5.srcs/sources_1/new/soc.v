@@ -29,17 +29,6 @@ module soc (
         .y      (instruction)
     );
     
-//    SingleCycleMips processor(
-//        .clk    (clk),
-//        .rst    (rst),
-//        .instr  (instruction),
-//        .rd     (read_data),
-//        .we     (we),
-//        .addr   (address),
-//        .pc     (pc),
-//        .wd     (write_data)
-//    );
-    
     PilelinedProcessor processor(
         .clk    (clk),
         .rst    (rst),

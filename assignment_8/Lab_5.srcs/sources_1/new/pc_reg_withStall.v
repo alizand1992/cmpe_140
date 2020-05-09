@@ -12,6 +12,6 @@ module pc_reg_withStall # (parameter WIDTH = 32)(
     end
     
     always @ (posedge clk) begin
-        if (~stallF) q <= d;
+        if (!stallF) q <= d;
     end
 endmodule

@@ -46,10 +46,11 @@ module mipsPilelined(
     wire [4:0]  rf_waM;
     wire [4:0]  rf_waE;
     wire [4:0]  rf_waW;
+    wire [31:0] instrD;
 
     controlunit cu (
-            .opcode         (instr[31:26]),
-            .funct          (instr[5:0]),
+            .opcode         (instrD[31:26]),
+            .funct          (instrD[5:0]),
             .branch         (branch),
             .jump           (jump),
             .reg_dst        (reg_dst),
@@ -77,6 +78,7 @@ module mipsPilelined(
             .alu_ctrlD      (alu_ctrl),
             .ra3            (ra3),
             .instr          (instr),
+            .instrD         (instrD),
             .rd_dm          (rd_dm),
             .pc_current     (pc_current),
             .alu_outM       (alu_out),
@@ -110,6 +112,7 @@ module mipsPilelined(
         );
         
     Hazard_CU hu(
+        .clk(clk),
         .forwardAD      (forwardAD),
         .forwardBD      (forwardBD),
         .forwardAE      (forwardAE),

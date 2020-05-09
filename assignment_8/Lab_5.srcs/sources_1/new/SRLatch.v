@@ -9,11 +9,11 @@ module SRLatch(
     
     initial begin
         q = 1'b0;
-        qnot = 1'b0;
+        qnot = 1'b1;
     end
     
     always@(posedge clk)begin
-        q = ~(r | qnot);
-        qnot = ~(s | q);
+        q = !(r | qnot);
+        qnot = !(s | q);
     end
 endmodule

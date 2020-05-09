@@ -23,6 +23,7 @@ module pipelined_DP(
         output wire [31:0] alu_outM,
         output wire [31:0] wd_dmM,
         output wire [31:0] rd3,
+        output wire [31:0] instrD,
         output wire        we_dmM,
         
 //hazard CU
@@ -57,7 +58,6 @@ module pipelined_DP(
     
     //ID
     wire [31:0] pc_plus4D;
-    wire [31:0] instrD;
     wire [4:0]  ra1;
     wire [4:0]  ra2;
     wire [5:0]  shamtD;

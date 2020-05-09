@@ -17,7 +17,7 @@ module reg_E(
      output reg         we_regM,
      output reg [4:0]   rf_waM,
      output reg [31:0]  wd_dmM,
-     output wire [31:0] alu_outM,
+     output reg [31:0]  alu_outM,
      output wire [31:0] prod_reg_rd,
      output reg [1:0]   dm2regM
     );
@@ -32,6 +32,7 @@ module reg_E(
         wd_dmM = 0;
         dm2regM = 0;
         we_regM = 0;
+        alu_outM = 0;
         for (n = 0; n < 2; n = n + 1) 
         rf[n] = 32'h0;
     end
@@ -43,6 +44,7 @@ module reg_E(
         wd_dmM <= wd_dmE2;
         we_regM <= we_regE;
         dm2regM <= dm2regE;
+        alu_outM <= alu_outE[31:0];
         if (m_weE) begin
 		  rf[0] <= alu_outE[31:0];
 		  rf[1] <= alu_outE[63:32];
@@ -50,6 +52,5 @@ module reg_E(
     end
     
     assign prod_reg_rd = rf[m_raE];
-    assign alu_outM = alu_outE[31:0];
     
 endmodule
