@@ -39,6 +39,7 @@
   <File Type="ROUTE-TIMING-PB" Name="fpga_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="fpga_top_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="fpga_top_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="fpga_top.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="fpga_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="fpga_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="fpga_top_bus_skew_routed.rpx"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="fpga_top.rbt"/>
   <File Type="BITSTR-NKY" Name="fpga_top.nky"/>
   <File Type="BG-DRC" Name="fpga_top.drc"/>
-  <File Type="RDI-RDI" Name="fpga_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

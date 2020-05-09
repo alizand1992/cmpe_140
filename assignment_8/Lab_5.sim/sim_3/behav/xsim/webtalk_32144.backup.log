@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  5 12:08:13 2020
+# Process ID: 32144
+# Current directory: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim/xsim.dir/tb_SOC_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim/webtalk.log
+# Journal file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Documents/CMPE -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/Documents/CMPE" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue May  5 12:08:13 2020...

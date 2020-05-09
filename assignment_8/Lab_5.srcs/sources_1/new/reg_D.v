@@ -58,7 +58,7 @@ module reg_D(
     end
     
     always @ (posedge clk) begin
-        if (~flushE) begin
+        if (!flushE) begin
 		  we_dmE <= we_dmD;
 		  alu_srcE <= alu_srcD;
 		  m_muxE <= m_muxD;

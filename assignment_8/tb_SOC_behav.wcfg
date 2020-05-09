@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="23333333fs"></ZoomStartTime>
-      <ZoomEndTime time="163333334fs"></ZoomEndTime>
-      <Cursor1Time time="140000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="68805311fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="122"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/tb_SOC/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,563 +28,13 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_SOC/gpI1" type="array">
-      <obj_property name="ElementShortName">gpI1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gpI1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/gpI2" type="array">
-      <obj_property name="ElementShortName">gpI2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gpI2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/gpO1" type="array">
-      <obj_property name="ElementShortName">gpO1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gpO1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/gpO2" type="array">
-      <obj_property name="ElementShortName">gpO2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gpO2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/pc" type="array">
-      <obj_property name="ElementShortName">pc[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/d_mem_data" type="array">
-      <obj_property name="ElementShortName">d_mem_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">d_mem_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/fact_data" type="array">
-      <obj_property name="ElementShortName">fact_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">fact_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/gpio_data" type="array">
-      <obj_property name="ElementShortName">gpio_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gpio_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/read_data" type="array">
-      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/write_data" type="array">
-      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_SOC/DUT/instruction" type="array">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/address" type="array">
-      <obj_property name="ElementShortName">address[31:0]</obj_property>
-      <obj_property name="ObjectShortName">address[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/AD/A" type="array">
-      <obj_property name="ElementShortName">A[9:0]</obj_property>
-      <obj_property name="ObjectShortName">A[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="group68" type="group">
-      <obj_property name="label">soc_ AD</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/we" type="logic">
-         <obj_property name="ElementShortName">we</obj_property>
-         <obj_property name="ObjectShortName">we</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/we1" type="logic">
-         <obj_property name="ElementShortName">we1</obj_property>
-         <obj_property name="ObjectShortName">we1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/we2" type="logic">
-         <obj_property name="ElementShortName">we2</obj_property>
-         <obj_property name="ObjectShortName">we2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/wem" type="logic">
-         <obj_property name="ElementShortName">wem</obj_property>
-         <obj_property name="ObjectShortName">wem</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/RdSel" type="array">
-         <obj_property name="ElementShortName">RdSel[1:0]</obj_property>
-         <obj_property name="ObjectShortName">RdSel[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/AD/WE" type="logic">
-         <obj_property name="ElementShortName">WE</obj_property>
-         <obj_property name="ObjectShortName">WE</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group101" type="group">
-      <obj_property name="label">factorial</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Factorial/go" type="logic">
-         <obj_property name="ElementShortName">go</obj_property>
-         <obj_property name="ObjectShortName">go</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Factorial/err" type="logic">
-         <obj_property name="ElementShortName">err</obj_property>
-         <obj_property name="ObjectShortName">err</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Factorial/n" type="array">
-         <obj_property name="ElementShortName">n[3:0]</obj_property>
-         <obj_property name="ObjectShortName">n[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Factorial/done" type="logic">
-         <obj_property name="ElementShortName">done</obj_property>
-         <obj_property name="ObjectShortName">done</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/we" type="logic">
-         <obj_property name="ElementShortName">we</obj_property>
-         <obj_property name="ObjectShortName">we</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/a" type="array">
-         <obj_property name="ElementShortName">a[1:0]</obj_property>
-         <obj_property name="ObjectShortName">a[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/wd" type="array">
-         <obj_property name="ElementShortName">wd[3:0]</obj_property>
-         <obj_property name="ObjectShortName">wd[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/rd" type="array">
-         <obj_property name="ElementShortName">rd[31:0]</obj_property>
-         <obj_property name="ObjectShortName">rd[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/We2" type="logic">
-         <obj_property name="ElementShortName">We2</obj_property>
-         <obj_property name="ObjectShortName">We2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/We1" type="logic">
-         <obj_property name="ElementShortName">We1</obj_property>
-         <obj_property name="ObjectShortName">We1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/RdSel" type="array">
-         <obj_property name="ElementShortName">RdSel[1:0]</obj_property>
-         <obj_property name="ObjectShortName">RdSel[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Go" type="logic">
-         <obj_property name="ElementShortName">Go</obj_property>
-         <obj_property name="ObjectShortName">Go</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/GoPulse" type="logic">
-         <obj_property name="ElementShortName">GoPulse</obj_property>
-         <obj_property name="ObjectShortName">GoPulse</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/GoPulseCmb" type="logic">
-         <obj_property name="ElementShortName">GoPulseCmb</obj_property>
-         <obj_property name="ObjectShortName">GoPulseCmb</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/nf" type="array">
-         <obj_property name="ElementShortName">nf[31:0]</obj_property>
-         <obj_property name="ObjectShortName">nf[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/nfClk" type="array">
-         <obj_property name="ElementShortName">nfClk[31:0]</obj_property>
-         <obj_property name="ObjectShortName">nfClk[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/ResDone" type="logic">
-         <obj_property name="ElementShortName">ResDone</obj_property>
-         <obj_property name="ObjectShortName">ResDone</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/ResErr" type="logic">
-         <obj_property name="ElementShortName">ResErr</obj_property>
-         <obj_property name="ObjectShortName">ResErr</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group171" type="group">
-      <obj_property name="label">GPIO</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/we" type="logic">
-         <obj_property name="ElementShortName">we</obj_property>
-         <obj_property name="ObjectShortName">we</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/a" type="array">
-         <obj_property name="ElementShortName">a[1:0]</obj_property>
-         <obj_property name="ObjectShortName">a[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/wd" type="array">
-         <obj_property name="ElementShortName">wd[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/gpI1" type="array">
-         <obj_property name="ElementShortName">gpI1[31:0]</obj_property>
-         <obj_property name="ObjectShortName">gpI1[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/gpI2" type="array">
-         <obj_property name="ElementShortName">gpI2[31:0]</obj_property>
-         <obj_property name="ObjectShortName">gpI2[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/gpO1" type="array">
-         <obj_property name="ElementShortName">gpO1[31:0]</obj_property>
-         <obj_property name="ObjectShortName">gpO1[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/gpO2" type="array">
-         <obj_property name="ElementShortName">gpO2[31:0]</obj_property>
-         <obj_property name="ObjectShortName">gpO2[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/rd" type="array">
-         <obj_property name="ElementShortName">rd[31:0]</obj_property>
-         <obj_property name="ObjectShortName">rd[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/We2" type="logic">
-         <obj_property name="ElementShortName">We2</obj_property>
-         <obj_property name="ObjectShortName">We2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/We1" type="logic">
-         <obj_property name="ElementShortName">We1</obj_property>
-         <obj_property name="ObjectShortName">We1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/gpio/RdSel" type="array">
-         <obj_property name="ElementShortName">RdSel[1:0]</obj_property>
-         <obj_property name="ObjectShortName">RdSel[1:0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group175" type="group">
-      <obj_property name="label">pipeline</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/instr" type="array">
-         <obj_property name="ElementShortName">instr[31:0]</obj_property>
-         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/rd" type="array">
-         <obj_property name="ElementShortName">rd[31:0]</obj_property>
-         <obj_property name="ObjectShortName">rd[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/we" type="logic">
-         <obj_property name="ElementShortName">we</obj_property>
-         <obj_property name="ObjectShortName">we</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/addr" type="array">
-         <obj_property name="ElementShortName">addr[31:0]</obj_property>
-         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/pc" type="array">
-         <obj_property name="ElementShortName">pc[31:0]</obj_property>
-         <obj_property name="ObjectShortName">pc[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/wd" type="array">
-         <obj_property name="ElementShortName">wd[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/ra3" type="array">
-         <obj_property name="ElementShortName">ra3[31:0]</obj_property>
-         <obj_property name="ObjectShortName">ra3[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/rd3" type="array">
-         <obj_property name="ElementShortName">rd3[31:0]</obj_property>
-         <obj_property name="ObjectShortName">rd3[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/flushE" type="logic">
-         <obj_property name="ElementShortName">flushE</obj_property>
-         <obj_property name="ObjectShortName">flushE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_dmD" type="logic">
-         <obj_property name="ElementShortName">we_dmD</obj_property>
-         <obj_property name="ObjectShortName">we_dmD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_regD" type="logic">
-         <obj_property name="ElementShortName">we_regD</obj_property>
-         <obj_property name="ObjectShortName">we_regD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_muxD" type="logic">
-         <obj_property name="ElementShortName">m_muxD</obj_property>
-         <obj_property name="ObjectShortName">m_muxD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_weD" type="logic">
-         <obj_property name="ElementShortName">m_weD</obj_property>
-         <obj_property name="ObjectShortName">m_weD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_raD" type="logic">
-         <obj_property name="ElementShortName">m_raD</obj_property>
-         <obj_property name="ObjectShortName">m_raD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_srcD" type="logic">
-         <obj_property name="ElementShortName">alu_srcD</obj_property>
-         <obj_property name="ObjectShortName">alu_srcD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/dm2regD" type="array">
-         <obj_property name="ElementShortName">dm2regD[1:0]</obj_property>
-         <obj_property name="ObjectShortName">dm2regD[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/reg_dstD" type="array">
-         <obj_property name="ElementShortName">reg_dstD[1:0]</obj_property>
-         <obj_property name="ObjectShortName">reg_dstD[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_ctrlD" type="array">
-         <obj_property name="ElementShortName">alu_ctrlD[2:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_ctrlD[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rtD" type="array">
-         <obj_property name="ElementShortName">rtD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rsD" type="array">
-         <obj_property name="ElementShortName">rsD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rdD" type="array">
-         <obj_property name="ElementShortName">rdD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rdD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/shamtD" type="array">
-         <obj_property name="ElementShortName">shamtD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">shamtD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_paD" type="array">
-         <obj_property name="ElementShortName">alu_paD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_paD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/wd_dmD" type="array">
-         <obj_property name="ElementShortName">wd_dmD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd_dmD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/sext_immD" type="array">
-         <obj_property name="ElementShortName">sext_immD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sext_immD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_dmE" type="logic">
-         <obj_property name="ElementShortName">we_dmE</obj_property>
-         <obj_property name="ObjectShortName">we_dmE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_srcE" type="logic">
-         <obj_property name="ElementShortName">alu_srcE</obj_property>
-         <obj_property name="ObjectShortName">alu_srcE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_muxE" type="logic">
-         <obj_property name="ElementShortName">m_muxE</obj_property>
-         <obj_property name="ObjectShortName">m_muxE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_weE" type="logic">
-         <obj_property name="ElementShortName">m_weE</obj_property>
-         <obj_property name="ObjectShortName">m_weE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_raE" type="logic">
-         <obj_property name="ElementShortName">m_raE</obj_property>
-         <obj_property name="ObjectShortName">m_raE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/dm2regE" type="array">
-         <obj_property name="ElementShortName">dm2regE[1:0]</obj_property>
-         <obj_property name="ObjectShortName">dm2regE[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/reg_dstE" type="array">
-         <obj_property name="ElementShortName">reg_dstE[1:0]</obj_property>
-         <obj_property name="ObjectShortName">reg_dstE[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_ctrlE" type="array">
-         <obj_property name="ElementShortName">alu_ctrlE[2:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_ctrlE[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rdE" type="array">
-         <obj_property name="ElementShortName">rdE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rdE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rsE" type="array">
-         <obj_property name="ElementShortName">rsE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rtE" type="array">
-         <obj_property name="ElementShortName">rtE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/shamtE" type="array">
-         <obj_property name="ElementShortName">shamtE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">shamtE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/sext_immE" type="array">
-         <obj_property name="ElementShortName">sext_immE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sext_immE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/wd_dmE" type="array">
-         <obj_property name="ElementShortName">wd_dmE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd_dmE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_paE" type="array">
-         <obj_property name="ElementShortName">alu_paE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_paE[31:0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/rf/rf" type="array">
-      <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
-      <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="group344" type="group">
-      <obj_property name="label">reg_F</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/stallD" type="logic">
-         <obj_property name="ElementShortName">stallD</obj_property>
-         <obj_property name="ObjectShortName">stallD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/instrF" type="array">
-         <obj_property name="ElementShortName">instrF[31:0]</obj_property>
-         <obj_property name="ObjectShortName">instrF[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/pc_plus4F" type="array">
-         <obj_property name="ElementShortName">pc_plus4F[31:0]</obj_property>
-         <obj_property name="ObjectShortName">pc_plus4F[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/instrD" type="array">
-         <obj_property name="ElementShortName">instrD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">instrD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_F/pc_plus4D" type="array">
-         <obj_property name="ElementShortName">pc_plus4D[31:0]</obj_property>
-         <obj_property name="ObjectShortName">pc_plus4D[31:0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group378" type="group">
-      <obj_property name="label">reg_D</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/flushE" type="logic">
-         <obj_property name="ElementShortName">flushE</obj_property>
-         <obj_property name="ObjectShortName">flushE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_dmD" type="logic">
-         <obj_property name="ElementShortName">we_dmD</obj_property>
-         <obj_property name="ObjectShortName">we_dmD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_regD" type="logic">
-         <obj_property name="ElementShortName">we_regD</obj_property>
-         <obj_property name="ObjectShortName">we_regD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_muxD" type="logic">
-         <obj_property name="ElementShortName">m_muxD</obj_property>
-         <obj_property name="ObjectShortName">m_muxD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_weD" type="logic">
-         <obj_property name="ElementShortName">m_weD</obj_property>
-         <obj_property name="ObjectShortName">m_weD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_raD" type="logic">
-         <obj_property name="ElementShortName">m_raD</obj_property>
-         <obj_property name="ObjectShortName">m_raD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_srcD" type="logic">
-         <obj_property name="ElementShortName">alu_srcD</obj_property>
-         <obj_property name="ObjectShortName">alu_srcD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/dm2regD" type="array">
-         <obj_property name="ElementShortName">dm2regD[1:0]</obj_property>
-         <obj_property name="ObjectShortName">dm2regD[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/reg_dstD" type="array">
-         <obj_property name="ElementShortName">reg_dstD[1:0]</obj_property>
-         <obj_property name="ObjectShortName">reg_dstD[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_ctrlD" type="array">
-         <obj_property name="ElementShortName">alu_ctrlD[2:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_ctrlD[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rtD" type="array">
-         <obj_property name="ElementShortName">rtD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rsD" type="array">
-         <obj_property name="ElementShortName">rsD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rdD" type="array">
-         <obj_property name="ElementShortName">rdD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rdD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/shamtD" type="array">
-         <obj_property name="ElementShortName">shamtD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">shamtD[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_paD" type="array">
-         <obj_property name="ElementShortName">alu_paD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_paD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/wd_dmD" type="array">
-         <obj_property name="ElementShortName">wd_dmD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd_dmD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/sext_immD" type="array">
-         <obj_property name="ElementShortName">sext_immD[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sext_immD[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/we_dmE" type="logic">
-         <obj_property name="ElementShortName">we_dmE</obj_property>
-         <obj_property name="ObjectShortName">we_dmE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_srcE" type="logic">
-         <obj_property name="ElementShortName">alu_srcE</obj_property>
-         <obj_property name="ObjectShortName">alu_srcE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_muxE" type="logic">
-         <obj_property name="ElementShortName">m_muxE</obj_property>
-         <obj_property name="ObjectShortName">m_muxE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_weE" type="logic">
-         <obj_property name="ElementShortName">m_weE</obj_property>
-         <obj_property name="ObjectShortName">m_weE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/m_raE" type="logic">
-         <obj_property name="ElementShortName">m_raE</obj_property>
-         <obj_property name="ObjectShortName">m_raE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/dm2regE" type="array">
-         <obj_property name="ElementShortName">dm2regE[1:0]</obj_property>
-         <obj_property name="ObjectShortName">dm2regE[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/reg_dstE" type="array">
-         <obj_property name="ElementShortName">reg_dstE[1:0]</obj_property>
-         <obj_property name="ObjectShortName">reg_dstE[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_ctrlE" type="array">
-         <obj_property name="ElementShortName">alu_ctrlE[2:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_ctrlE[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rdE" type="array">
-         <obj_property name="ElementShortName">rdE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rdE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rsE" type="array">
-         <obj_property name="ElementShortName">rsE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/rtE" type="array">
-         <obj_property name="ElementShortName">rtE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtE[4:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/shamtE" type="array">
-         <obj_property name="ElementShortName">shamtE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">shamtE[4:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/sext_immE" type="array">
-         <obj_property name="ElementShortName">sext_immE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sext_immE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/wd_dmE" type="array">
-         <obj_property name="ElementShortName">wd_dmE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">wd_dmE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_D/alu_paE" type="array">
-         <obj_property name="ElementShortName">alu_paE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">alu_paE[31:0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group399" type="group">
+   <wvobject fp_name="group41" type="group">
       <obj_property name="label">reg_E</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_E/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_E/we_dmE" type="logic">
          <obj_property name="ElementShortName">we_dmE</obj_property>
          <obj_property name="ObjectShortName">we_dmE</obj_property>
@@ -662,13 +112,9 @@
          <obj_property name="ObjectShortName">n[31:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group413" type="group">
+   <wvobject fp_name="group57" type="group">
       <obj_property name="label">reg_M</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/rd_dm" type="array">
          <obj_property name="ElementShortName">rd_dm[31:0]</obj_property>
          <obj_property name="ObjectShortName">rd_dm[31:0]</obj_property>
@@ -685,6 +131,10 @@
          <obj_property name="ElementShortName">we_regM</obj_property>
          <obj_property name="ObjectShortName">we_regM</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/m_muxM" type="logic">
+         <obj_property name="ElementShortName">m_muxM</obj_property>
+         <obj_property name="ObjectShortName">m_muxM</obj_property>
+      </wvobject>
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/alu_outM" type="array">
          <obj_property name="ElementShortName">alu_outM[31:0]</obj_property>
          <obj_property name="ObjectShortName">alu_outM[31:0]</obj_property>
@@ -696,6 +146,10 @@
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/we_regW" type="logic">
          <obj_property name="ElementShortName">we_regW</obj_property>
          <obj_property name="ObjectShortName">we_regW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/m_muxW" type="logic">
+         <obj_property name="ElementShortName">m_muxW</obj_property>
+         <obj_property name="ObjectShortName">m_muxW</obj_property>
       </wvobject>
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/reg_M/dm2regW" type="array">
          <obj_property name="ElementShortName">dm2regW[1:0]</obj_property>
@@ -718,68 +172,223 @@
          <obj_property name="ObjectShortName">rd_dmW[31:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group440" type="group">
-      <obj_property name="label">HU</obj_property>
+   <wvobject fp_name="group66" type="group">
+      <obj_property name="label">ForwardBE_mux</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rtE" type="array">
-         <obj_property name="ElementShortName">rtE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtE[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/sel" type="array">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rtD" type="array">
-         <obj_property name="ElementShortName">rtD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rtD[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/a" type="array">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rsD" type="array">
-         <obj_property name="ElementShortName">rsD[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsD[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/b" type="array">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rsE" type="array">
-         <obj_property name="ElementShortName">rsE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rsE[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/c" type="array">
+         <obj_property name="ElementShortName">c[31:0]</obj_property>
+         <obj_property name="ObjectShortName">c[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/dm2regE" type="logic">
-         <obj_property name="ElementShortName">dm2regE</obj_property>
-         <obj_property name="ObjectShortName">dm2regE</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/d" type="array">
+         <obj_property name="ElementShortName">d[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/dm2regM" type="logic">
-         <obj_property name="ElementShortName">dm2regM</obj_property>
-         <obj_property name="ObjectShortName">dm2regM</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/y" type="array">
+         <obj_property name="ElementShortName">y[31:0]</obj_property>
+         <obj_property name="ObjectShortName">y[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waM" type="array">
-         <obj_property name="ElementShortName">rf_waM[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rf_waM[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/forwardBE_mux/WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waE" type="array">
-         <obj_property name="ElementShortName">rf_waE[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rf_waE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/wd_dmE" type="array">
+      <obj_property name="ElementShortName">wd_dmE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_dmE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/rf/ra2" type="array">
+      <obj_property name="ElementShortName">ra2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/rf/rd2" type="array">
+      <obj_property name="ElementShortName">rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/rf/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group122" type="group">
+      <obj_property name="label">Fact_Accel</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waW" type="array">
-         <obj_property name="ElementShortName">rf_waW[4:0]</obj_property>
-         <obj_property name="ObjectShortName">rf_waW[4:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regE" type="logic">
-         <obj_property name="ElementShortName">we_regE</obj_property>
-         <obj_property name="ObjectShortName">we_regE</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regM" type="logic">
-         <obj_property name="ElementShortName">we_regM</obj_property>
-         <obj_property name="ObjectShortName">we_regM</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/a" type="array">
+         <obj_property name="ElementShortName">a[1:0]</obj_property>
+         <obj_property name="ObjectShortName">a[1:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regW" type="logic">
-         <obj_property name="ElementShortName">we_regW</obj_property>
-         <obj_property name="ObjectShortName">we_regW</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/wd" type="array">
+         <obj_property name="ElementShortName">wd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wd[3:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/branchD" type="logic">
-         <obj_property name="ElementShortName">branchD</obj_property>
-         <obj_property name="ObjectShortName">branchD</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/rd" type="array">
+         <obj_property name="ElementShortName">rd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/forwardAD" type="logic">
-         <obj_property name="ElementShortName">forwardAD</obj_property>
-         <obj_property name="ObjectShortName">forwardAD</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/We2" type="logic">
+         <obj_property name="ElementShortName">We2</obj_property>
+         <obj_property name="ObjectShortName">We2</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/forwardBD" type="logic">
-         <obj_property name="ElementShortName">forwardBD</obj_property>
-         <obj_property name="ObjectShortName">forwardBD</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/We1" type="logic">
+         <obj_property name="ElementShortName">We1</obj_property>
+         <obj_property name="ObjectShortName">We1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/RdSel" type="array">
+         <obj_property name="ElementShortName">RdSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RdSel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/Go" type="logic">
+         <obj_property name="ElementShortName">Go</obj_property>
+         <obj_property name="ObjectShortName">Go</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/GoPulse" type="logic">
+         <obj_property name="ElementShortName">GoPulse</obj_property>
+         <obj_property name="ObjectShortName">GoPulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/GoPulseCmb" type="logic">
+         <obj_property name="ElementShortName">GoPulseCmb</obj_property>
+         <obj_property name="ObjectShortName">GoPulseCmb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/n" type="array">
+         <obj_property name="ElementShortName">n[3:0]</obj_property>
+         <obj_property name="ObjectShortName">n[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/err" type="logic">
+         <obj_property name="ElementShortName">err</obj_property>
+         <obj_property name="ObjectShortName">err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/nf" type="array">
+         <obj_property name="ElementShortName">nf[31:0]</obj_property>
+         <obj_property name="ObjectShortName">nf[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/nfClk" type="array">
+         <obj_property name="ElementShortName">nfClk[31:0]</obj_property>
+         <obj_property name="ObjectShortName">nfClk[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/ResDone" type="logic">
+         <obj_property name="ElementShortName">ResDone</obj_property>
+         <obj_property name="ObjectShortName">ResDone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/Fact_Accel/ResErr" type="logic">
+         <obj_property name="ElementShortName">ResErr</obj_property>
+         <obj_property name="ObjectShortName">ResErr</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group149" type="group">
+      <obj_property name="label">hazard_cu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group275" type="group">
+         <obj_property name="label">forwardAE10</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regM" type="logic">
+            <obj_property name="ElementShortName">we_regM</obj_property>
+            <obj_property name="ObjectShortName">we_regM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rsE" type="logic">
+            <obj_property name="ElementShortName">s_rsE</obj_property>
+            <obj_property name="ObjectShortName">s_rsE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waM" type="array">
+            <obj_property name="ElementShortName">rf_waM[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_waM[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rsE" type="array">
+            <obj_property name="ElementShortName">rsE[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rsE[4:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group278" type="group">
+         <obj_property name="label">forwardAE01</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regW" type="logic">
+            <obj_property name="ElementShortName">we_regW</obj_property>
+            <obj_property name="ObjectShortName">we_regW</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rsE" type="logic">
+            <obj_property name="ElementShortName">s_rsE</obj_property>
+            <obj_property name="ObjectShortName">s_rsE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waW" type="array">
+            <obj_property name="ElementShortName">rf_waW[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_waW[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rsE" type="array">
+            <obj_property name="ElementShortName">rsE[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rsE[4:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group285" type="group">
+         <obj_property name="label">forwardBE10</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regM" type="logic">
+            <obj_property name="ElementShortName">we_regM</obj_property>
+            <obj_property name="ObjectShortName">we_regM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rtE" type="logic">
+            <obj_property name="ElementShortName">s_rtE</obj_property>
+            <obj_property name="ObjectShortName">s_rtE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waM" type="array">
+            <obj_property name="ElementShortName">rf_waM[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_waM[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rtE" type="array">
+            <obj_property name="ElementShortName">rtE[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rtE[4:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group299" type="group">
+         <obj_property name="label">forwardBE01</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/we_regW" type="logic">
+            <obj_property name="ElementShortName">we_regW</obj_property>
+            <obj_property name="ObjectShortName">we_regW</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rtE" type="logic">
+            <obj_property name="ElementShortName">s_rtE</obj_property>
+            <obj_property name="ObjectShortName">s_rtE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rf_waW" type="array">
+            <obj_property name="ElementShortName">rf_waW[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_waW[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/rtE" type="array">
+            <obj_property name="ElementShortName">rtE[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rtE[4:0]</obj_property>
+         </wvobject>
       </wvobject>
       <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/forwardAE" type="array">
          <obj_property name="ElementShortName">forwardAE[1:0]</obj_property>
@@ -789,95 +398,66 @@
          <obj_property name="ElementShortName">forwardBE[1:0]</obj_property>
          <obj_property name="ObjectShortName">forwardBE[1:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/stallD" type="logic">
-         <obj_property name="ElementShortName">stallD</obj_property>
-         <obj_property name="ObjectShortName">stallD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/flushE" type="logic">
-         <obj_property name="ElementShortName">flushE</obj_property>
-         <obj_property name="ObjectShortName">flushE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/stallF" type="logic">
-         <obj_property name="ElementShortName">stallF</obj_property>
-         <obj_property name="ObjectShortName">stallF</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/lwstall" type="logic">
-         <obj_property name="ElementShortName">lwstall</obj_property>
-         <obj_property name="ObjectShortName">lwstall</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rtE" type="logic">
-         <obj_property name="ElementShortName">s_rtE</obj_property>
-         <obj_property name="ObjectShortName">s_rtE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rtD" type="logic">
-         <obj_property name="ElementShortName">s_rtD</obj_property>
-         <obj_property name="ObjectShortName">s_rtD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rsD" type="logic">
-         <obj_property name="ElementShortName">s_rsD</obj_property>
-         <obj_property name="ObjectShortName">s_rsD</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/s_rsE" type="logic">
-         <obj_property name="ElementShortName">s_rsE</obj_property>
-         <obj_property name="ObjectShortName">s_rsE</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/hu/branchStall" type="logic">
-         <obj_property name="ElementShortName">branchStall</obj_property>
-         <obj_property name="ObjectShortName">branchStall</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/op" type="array">
-         <obj_property name="ElementShortName">op[2:0]</obj_property>
-         <obj_property name="ObjectShortName">op[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/a" type="array">
-         <obj_property name="ElementShortName">a[31:0]</obj_property>
-         <obj_property name="ObjectShortName">a[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/b" type="array">
-         <obj_property name="ElementShortName">b[31:0]</obj_property>
-         <obj_property name="ObjectShortName">b[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/shamt" type="array">
-         <obj_property name="ElementShortName">shamt[5:0]</obj_property>
-         <obj_property name="ObjectShortName">shamt[5:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/zero" type="logic">
-         <obj_property name="ElementShortName">zero</obj_property>
-         <obj_property name="ObjectShortName">zero</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/y" type="array">
-         <obj_property name="ElementShortName">y[63:0]</obj_property>
-         <obj_property name="ObjectShortName">y[63:0]</obj_property>
-      </wvobject>
    </wvobject>
-   <wvobject fp_name="group453" type="group">
-      <obj_property name="label">ALU</obj_property>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/dm2regE_HU" type="logic">
+      <obj_property name="ElementShortName">dm2regE_HU</obj_property>
+      <obj_property name="ObjectShortName">dm2regE_HU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/dm2regM_HU" type="logic">
+      <obj_property name="ElementShortName">dm2regM_HU</obj_property>
+      <obj_property name="ObjectShortName">dm2regM_HU</obj_property>
+   </wvobject>
+   <wvobject fp_name="group264" type="group">
+      <obj_property name="label">md</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/op" type="array">
-         <obj_property name="ElementShortName">op[2:0]</obj_property>
-         <obj_property name="ObjectShortName">op[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/a" type="array">
-         <obj_property name="ElementShortName">a[31:0]</obj_property>
-         <obj_property name="ObjectShortName">a[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/b" type="array">
-         <obj_property name="ElementShortName">b[31:0]</obj_property>
-         <obj_property name="ObjectShortName">b[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/shamt" type="array">
-         <obj_property name="ElementShortName">shamt[5:0]</obj_property>
-         <obj_property name="ObjectShortName">shamt[5:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/opcode" type="array">
+         <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
          <obj_property name="isExpanded"></obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/zero" type="logic">
-         <obj_property name="ElementShortName">zero</obj_property>
-         <obj_property name="ObjectShortName">zero</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/branch" type="logic">
+         <obj_property name="ElementShortName">branch</obj_property>
+         <obj_property name="ObjectShortName">branch</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/dp/alu/y" type="array">
-         <obj_property name="ElementShortName">y[63:0]</obj_property>
-         <obj_property name="ObjectShortName">y[63:0]</obj_property>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/jump" type="logic">
+         <obj_property name="ElementShortName">jump</obj_property>
+         <obj_property name="ObjectShortName">jump</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/reg_dst" type="array">
+         <obj_property name="ElementShortName">reg_dst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/we_reg" type="logic">
+         <obj_property name="ElementShortName">we_reg</obj_property>
+         <obj_property name="ObjectShortName">we_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/alu_src" type="logic">
+         <obj_property name="ElementShortName">alu_src</obj_property>
+         <obj_property name="ObjectShortName">alu_src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/we_dm" type="logic">
+         <obj_property name="ElementShortName">we_dm</obj_property>
+         <obj_property name="ObjectShortName">we_dm</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/dm2reg" type="array">
+         <obj_property name="ElementShortName">dm2reg[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dm2reg[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/alu_op" type="array">
+         <obj_property name="ElementShortName">alu_op[1:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_op[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/cu/md/ctrl" type="array">
+         <obj_property name="ElementShortName">ctrl[10:0]</obj_property>
+         <obj_property name="ObjectShortName">ctrl[10:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/rsD" type="array">
+      <obj_property name="ElementShortName">rsD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rsD[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SOC/DUT/processor/mipsPilelined/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
    </wvobject>
 </wave_config>

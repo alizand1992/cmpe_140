@@ -28,10 +28,10 @@ module main_ad(
                 RdSel = 2'd3;
             end
             default:begin
-                WE1 = 1'bx;
-                WE2 = 1'bx;
-                WEM = 1'bx;
-                RdSel = 2'bxx;
+                WE1 = 1'b0;
+                WE2 = 1'b0;
+                WEM = 1'b0;
+                RdSel = 2'b00;
             end
         endcase
     end

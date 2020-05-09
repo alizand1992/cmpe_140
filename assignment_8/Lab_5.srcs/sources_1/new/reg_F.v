@@ -15,7 +15,7 @@ module reg_F(
     end
     
     always @ (posedge clk) begin
-        if (~stallD) begin
+        if (!stallD) begin
 		  instrD <= instrF;
 		  pc_plus4D <= pc_plus4F;
 		end

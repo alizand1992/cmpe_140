@@ -40,10 +40,10 @@ module Hazard_CU(
     
     
     //Forward AE
-    assign forwardAE = (we_regM & s_rsE & (rf_waM == rsE)==1) ? 2'b10 : (we_regW & s_rsE & (rf_waW == rsE)==1) ? 2'b01 : 2'b00;
+    assign forwardAE = (we_regM & s_rsE & (rf_waM == rsE)) ? 2'b10 : (we_regW & s_rsE & (rf_waW == rsE)) ? 2'b01 : 2'b00;
     
     //Forward BE
-    assign forwardBE = (we_regM & s_rtE & (rf_waM == rtE)==1) ? 2'b10 : (we_regW & s_rtE & (rf_waW == rtE)==1) ? 2'b01 : 2'b00;
+    assign forwardBE = (we_regM & s_rtE & (rf_waM == rtE)) ? 2'b10 : (we_regW & s_rtE & (rf_waW == rtE)) ? 2'b01 : 2'b00;
     
     //Forward AD
     assign forwardAD = (we_regM & s_rsD & (rf_waM == rsD) & branchD);

@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue May  5 12:08:13 2020
-# Process ID: 32144
-# Current directory: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim/xsim.dir/tb_SOC_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim/webtalk.log
-# Journal file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/sim_3/behav/xsim\webtalk.jou
+# Start of session at: Sat May  9 00:42:49 2020
+# Process ID: 16464
+# Current directory: C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim/xsim.dir/tb_SOC_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim/webtalk.log
+# Journal file: C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/Documents/CMPE -notrace
+source C:/Users/aliza/Documents/cmpe_140/assignment_8/Lab_5.sim/sim_3/behav/xsim/xsim.dir/tb_SOC_behav/webtalk/xsim_webtalk.tcl -notrace
