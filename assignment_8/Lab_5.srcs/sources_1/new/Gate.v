@@ -5,8 +5,13 @@ module Gate #(parameter width = 32)(
         input [width-1:0] i,
         output reg [width-1:0] o
     );
+    
+    initial begin
+        o = 0;
+    end
+    
     always@(posedge clk)begin
     if(en) o <= i;
-    else o <= 0;
+    else o <= o;
     end
 endmodule

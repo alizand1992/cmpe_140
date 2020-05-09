@@ -32,9 +32,29 @@ module tb_SOC;
     assign gpI2 = gpO1;
     
     initial begin
+        clk = 1'b0;
+        rst = 1'b0;
+        gpI1 = {27'b0,5'b00110};//6
         reset;
-        gpI1 = {27'b0,5'b00100};
-        while(pc != 32'h48) tick;
+        while(pc != 32'h44) tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;
+        tick;tick;tick;tick;tick;tick;tick;tick;tick;tick;
+        
+        gpI1 = {27'b0,5'b01101};//13
+        tick;
+        while(pc != 32'h44) tick;
+        
+        gpI1 = {27'b0,5'b01100};//12
+        tick;
+        while(pc != 32'h44) tick;
         $finish;
     end
 

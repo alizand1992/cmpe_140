@@ -1,0 +1,91 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Apr 28 12:34:00 2020
+| Host         : Coffee-Lake running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fpga_top_control_sets_placed.rpt
+| Design       : fpga_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            6 |
+| No           | No                    | Yes                    |               8 |            4 |
+| No           | Yes                   | No                     |              66 |           20 |
+| Yes          | No                    | No                     |             105 |           35 |
+| Yes          | No                    | Yes                    |              36 |           22 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+------------------------------------------------------------+------------------+------------------+----------------+
+|           Clock Signal          |                        Enable Signal                       | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------------------+------------------------------------------------------------+------------------+------------------+----------------+
+|  clk_gen/clk_5KHz               |                                                            |                  |                1 |              2 |
+|  clk_sec_BUFG                   | soc/Fact_Accel/Factorial/CU/E[0]                           | rst_IBUF         |                1 |              4 |
+|  clk_sec_BUFG                   | soc/processor/mips/dp/pc_reg/E[0]                          |                  |                1 |              4 |
+|  soc/Fact_Accel/Factorial/CU/ns |                                                            |                  |                2 |              6 |
+|  clk_sec_BUFG                   |                                                            |                  |                3 |              6 |
+|  clk_sec_BUFG                   |                                                            | rst_IBUF         |                4 |              8 |
+|  clk_sec_BUFG                   | soc/Fact_Accel/Factorial/CU/Q[1]                           | rst_IBUF         |               21 |             32 |
+|  clk_sec_BUFG                   | soc/Fact_Accel/Factorial/CU/Q[0]                           |                  |               11 |             32 |
+|  clk_sec_BUFG                   | soc/processor/mips/dp/pc_reg/we                            |                  |                8 |             32 |
+|  clk_sec_BUFG                   | soc/processor/mips/dp/pc_reg/rf_reg_r1_0_31_6_11_i_13_0[0] |                  |               10 |             32 |
+|  clk_sec_BUFG                   | soc/processor/mips/dp/pc_reg/rf_reg_r1_0_31_0_5_i_23_2[0]  |                  |               13 |             37 |
+|  clk_IBUF_BUFG                  |                                                            | rst_IBUF         |               20 |             66 |
+|  clk_sec_BUFG                   | soc/processor/mips/dp/pc_reg/we_reg                        |                  |               12 |             96 |
++---------------------------------+------------------------------------------------------------+------------------+------------------+----------------+
+
+

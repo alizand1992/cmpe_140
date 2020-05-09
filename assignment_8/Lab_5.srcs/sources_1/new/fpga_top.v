@@ -1,11 +1,11 @@
 module fpga_top(
-    input clk, rst, sw4, sw3, sw2, sw1, sw0,
-    output ld4, ld3, ld2, ld1, ld0,
-    output [3:0] LEDSEL,
-    output [7:0] LEDOUT
+    input wire clk, rst, sw4, sw3, sw2, sw1, sw0, button_clk,
+    output wire ld4, ld3, ld2, ld1, ld0,
+    output wire [3:0] LEDSEL,
+    output wire [7:0] LEDOUT
 );
 
-    wire clk_5KHz, clk_sec;
+    wire clk_5KHz, clk_sec, clk_pb;
     wire [31:0] gpo1, gpo2, pc;
     wire [15:0] hex;
 
@@ -15,15 +15,22 @@ module fpga_top(
         .clk_4sec(clk_sec), .clk_5KHz(clk_5KHz)
     );
     
+    button_debouncer bd (
+            .clk                (clk_5KHz),
+            .button             (button_clk),
+            .debounced_button   (clk_pb)
+        );
+    
     soc soc(
-        .clk(clk), .rst(rst), .gpI1({27'b0, sw4, sw3, sw2, sw1, sw10}),
+        .clk(clk_sec), .rst(rst), 
+        .gpI1({27'b0, sw4, sw3, sw2, sw1, sw0}),
         .gpI2(gpo1),
         
         .gpO2(gpo2), .gpO1(gpo1), .pc(pc)
     );
         
     mux2 #(16) gpo_mux (
-        .sel(gpo1[0]), .a(gpo2[15:0]), .b(gpo2[31:16]),
+        .sel(gpo1[4]), .a(gpo2[15:0]), .b(gpo2[31:16]),
         .y(hex)    
     );
     

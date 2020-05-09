@@ -1,0 +1,32 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Documents/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e490891391e04ac4a8da26862544ebb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Factorial_with_wrapper_TB_behav xil_defaultlib.Factorial_with_wrapper_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 28 for port 'A' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 100fs
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.Gate(width=1)
+Compiling module xil_defaultlib.Gate(width=4)
+Compiling module xil_defaultlib.Factorial_CU
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.D_Register(WIDTH=32)
+Compiling module xil_defaultlib.cnt
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.CarryLookBlock
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.CLA_Adder
+Compiling module xil_defaultlib.Parallel_Multiplier
+Compiling module xil_defaultlib.Factorial_DP
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.Gate
+Compiling module xil_defaultlib.SRLatch
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.FactorialAccelerator
+Compiling module xil_defaultlib.Factorial_with_wrapper_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Factorial_with_wrapper_TB_behav

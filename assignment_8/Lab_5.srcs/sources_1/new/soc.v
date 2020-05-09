@@ -29,7 +29,18 @@ module soc (
         .y      (instruction)
     );
     
-    SingleCycleMips processor(
+//    SingleCycleMips processor(
+//        .clk    (clk),
+//        .rst    (rst),
+//        .instr  (instruction),
+//        .rd     (read_data),
+//        .we     (we),
+//        .addr   (address),
+//        .pc     (pc),
+//        .wd     (write_data)
+//    );
+    
+    PilelinedProcessor processor(
         .clk    (clk),
         .rst    (rst),
         .instr  (instruction),
@@ -45,18 +56,18 @@ module soc (
        .rst     (rst), 
        .we      (we2), 
        .a       (address[3:2]), 
-       .wd      (write_data[3:0]),
-       .gpI1    (),
-       .gpI2    (),
-       .gpO1    (),
-       .gpO2    (),
+       .wd      (write_data),
+       .gpI1    (gpI1),
+       .gpI2    (gpI2),
+       .gpO1    (gpO1),
+       .gpO2    (gpO2),
        .rd      (gpio_data)
     );
     
     FactorialAccelerator Fact_Accel(
         .clk    (clk),
         .rst    (rst),
-        .we     (we2),
+        .we     (we1),
         .a      (address[3:2]), 
         .wd     (write_data[3:0]),
        .rd      (fact_data)

@@ -2,7 +2,7 @@ module alu (
         input  wire [2:0]  op,
         input  wire [31:0] a,
         input  wire [31:0] b,
-        input  wire [5:0] shamt,
+        input  wire [4:0] shamt,
         output wire        zero,
         output reg  [63:0] y
     );

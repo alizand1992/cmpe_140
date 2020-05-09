@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Factorial/CLA_Adder.v" \
+"../../../../Factorial/CarryLookBlock.v" \
+"../../../../Factorial/Comparator.v" \
+"../../../../Factorial/D_Register.v" \
+"../../../../Lab_5.srcs/sources_1/new/Factorial Accelerator.v" \
+"../../../../Factorial/Factorial.v" \
+"../../../../Factorial/Factorial_CU.v" \
+"../../../../Factorial/Factorial_DP.v" \
+"../../../../Lab_5.srcs/sources_1/new/Gate.v" \
+"../../../../Factorial/HalfAdder.v" \
+"../../../../Factorial/Parallel_Multiplier.v" \
+"../../../../Lab_5.srcs/sources_1/new/SRLatch.v" \
+"../../../../Factorial/XOR.v" \
+"../../../../Lab_5.srcs/sources_1/new/fact_ad.v" \
+"../../../../single_cycle_mips_source_initial/datapath/mux2.v" \
+"../../../../single_cycle_mips_source_initial/datapath/mux4.v" \
+"../../../../Factorial/up_down_counter.v" \
+"../../../../Lab_5.srcs/sources_1/new/Factorial_with_wrapper_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

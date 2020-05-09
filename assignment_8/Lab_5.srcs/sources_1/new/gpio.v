@@ -8,8 +8,6 @@ module GPIO (
     wire        We2;
     wire        We1;
     wire [1:0]  RdSel;
-    wire [31:0] gpio1;
-    wire [31:0] gpio2;
     
     gpio_ad decoder(
         .A      (a),
@@ -23,26 +21,23 @@ module GPIO (
         .clk    (clk),
         .en     (We1),
         .i      (wd),
-        .o      (gpio1)
+        .o      (gpO1)
     );
     
     Gate #(32) GPIO2(
         .clk    (clk),
         .en     (We2),
         .i      (wd),
-        .o      (gpio2)
+        .o      (gpO2)
     );
 
 mux4 #(32) data_mux(
         .sel    (RdSel),
         .a      (gpI1), 
         .b      (gpI2), 
-        .c      (gpio1), 
-        .d      (gpio2),
+        .c      (gpO1), 
+        .d      (gpO2),
         .y      (rd)
     );
-    
-    assign gpO1 = gpio1;
-    assign gpO2 = gpio2;
 
 endmodule

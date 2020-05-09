@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/CMPE 140/lab5_processor_design_1/Lab_5.runs/impl_1'
+HD_PWD='D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log mips_fpga.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source mips_fpga.tcl -notrace
+EAStep vivado -log fpga_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpga_top.tcl -notrace
 
 

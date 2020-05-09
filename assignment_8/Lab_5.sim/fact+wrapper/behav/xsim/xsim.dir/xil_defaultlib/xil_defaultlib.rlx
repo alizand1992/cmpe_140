@@ -1,0 +1,23 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CLA_Adder.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CarryLookBlock.v,,CLA_Adder,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CarryLookBlock.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Comparator.v,,CarryLookBlock,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Comparator.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/D_Register.v,,comparator,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/D_Register.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial Accelerator.v,,D_Register,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v,,Factorial,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v,,Factorial_CU,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v,,Factorial_DP,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/HalfAdder.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Parallel_Multiplier.v,,HalfAdder,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Parallel_Multiplier.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v,,Parallel_Multiplier,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/XOR.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v,,XOR,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/up_down_counter.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial_with_wrapper_TB.v,,cnt,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.sim/fact+wrapper/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial Accelerator.v,1588091974,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial.v,,FactorialAccelerator,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial_with_wrapper_TB.v,1588112278,verilog,,,,Factorial_with_wrapper_TB,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v,1588091832,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/HalfAdder.v,,Gate,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v,1588111348,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/XOR.v,,SRLatch,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v,,fact_ad,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v,,mux2,,,,,,,,
+D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v,1588064189,verilog,,D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/up_down_counter.v,,mux4,,,,,,,,

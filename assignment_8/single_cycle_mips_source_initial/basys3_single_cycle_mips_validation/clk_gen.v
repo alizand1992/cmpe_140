@@ -15,7 +15,7 @@ module clk_gen (
             clk_4sec = 0;
         end
         else begin
-            if (count1 == 200000000) begin
+            if (count1 == 2000000) begin
                 clk_4sec = ~clk_4sec;
                 count1 = 0;
             end

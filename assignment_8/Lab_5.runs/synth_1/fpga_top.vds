@@ -1,0 +1,687 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 28 12:32:55 2020
+# Process ID: 49884
+# Current directory: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/synth_1
+# Command line: vivado.exe -log fpga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+# Log file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/synth_1/fpga_top.vds
+# Journal file: D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace
+Command: synth_design -top fpga_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 44264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 673.691 ; gain = 177.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fpga_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'soc' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/soc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (3#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'main_ad' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/main_ad.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main_ad' (4#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/main_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (5#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SingleCycleMips' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SingleCycleMips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (6#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (7#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (9#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (10#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (11#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/alu.v:1]
+WARNING: [Synth 8-567] referenced signal 'shamt' should be on the sensitivity list [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (12#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'prod_reg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/prod_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'prod_reg' (13#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/prod_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized0' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized0' (13#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (14#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (15#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (16#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (17#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (18#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/mips/mips.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'ra3' does not match port width (5) of module 'mips' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SingleCycleMips.v:15]
+WARNING: [Synth 8-3848] Net ra3 in module/entity SingleCycleMips does not have driver. [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SingleCycleMips.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SingleCycleMips' (19#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SingleCycleMips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/gpio.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/gpio_ad.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (20#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Gate' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Gate' (21#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (22#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/gpio.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FactorialAccelerator' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial Accelerator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (23#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Gate__parameterized0' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Gate__parameterized0' (23#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Gate__parameterized1' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Gate__parameterized1' (23#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Gate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial.v:3]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Factorial_CU' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:3]
+	Parameter s0 bound to: 3'b000 
+	Parameter s1 bound to: 3'b001 
+	Parameter s2 bound to: 3'b010 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial_CU' (24#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Factorial_DP' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v:3]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'D_Register' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/D_Register.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'D_Register' (25#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/D_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/up_down_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cnt' (26#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/up_down_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Comparator.v:1]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (27#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Comparator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Parallel_Multiplier' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Parallel_Multiplier.v:3]
+	Parameter width bound to: 32 - type: integer 
+	Parameter aWidth bound to: 28 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CLA_Adder' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CLA_Adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'HalfAdder' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/HalfAdder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HalfAdder' (28#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/HalfAdder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CarryLookBlock' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CarryLookBlock.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CarryLookBlock' (29#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CarryLookBlock.v:7]
+INFO: [Synth 8-6157] synthesizing module 'XOR' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/XOR.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'XOR' (30#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/XOR.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_Adder' (31#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/CLA_Adder.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Parallel_Multiplier' (32#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Parallel_Multiplier.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (28) of module 'Parallel_Multiplier' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial_DP' (33#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_DP.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (34#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SRLatch' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SRLatch' (35#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/SRLatch.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FactorialAccelerator' (36#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/Factorial Accelerator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'soc' (37#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/soc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (37#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'disp_driver' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/7seg_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (38#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (39#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'disp_driver' (40#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/7seg_driver.v:1]
+WARNING: [Synth 8-7023] instance 'disp_driver' of module 'disp_driver' has 9 connections declared, but only 8 given [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fpga_top.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (41#1) [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.srcs/sources_1/new/fpga_top.v:1]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[3]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[2]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[1]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[0]
+WARNING: [Synth 8-3331] design GPIO has unconnected port rst
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 738.547 ; gain = 242.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 738.547 ; gain = 242.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 738.547 ; gain = 242.219
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+Finished Parsing XDC File [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/basys3_single_cycle_mips_validation/mips_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 863.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 863.336 ; gain = 367.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 863.336 ; gain = 367.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 863.336 ; gain = 367.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'Factorial_CU'
+WARNING: [Synth 8-327] inferring latch for variable 'Control_reg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_ns_reg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_ns_reg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:23]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              001 |                              000
+                      s1 |                              010 |                              001
+                      s2 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'Factorial_CU'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_ns_reg' [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Factorial/Factorial_CU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 863.336 ; gain = 367.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 192   
++---Registers : 
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	  19 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	  12 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module main_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  19 Input     32 Bit        Muxes := 1     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module prod_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	  12 Input      6 Bit        Muxes := 1     
+Module gpio_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module Gate 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module fact_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module Gate__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Gate__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Factorial_CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module D_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module cnt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module HalfAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module XOR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module SRLatch 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/single_cycle_mips_source_initial/datapath/alu.v:19]
+DSP Report: Generating DSP y0, operation Mode is: A*B.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: Generating DSP y0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: Generating DSP y0, operation Mode is: A*B.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: Generating DSP y0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y0 is absorbed into DSP y0.
+DSP Report: operator y0 is absorbed into DSP y0.
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[3]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[2]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[1]
+WARNING: [Synth 8-3331] design disp_driver has unconnected port dp_in[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design fpga_top has unconnected port button_clk
+INFO: [Synth 8-3886] merging instance 'soc/Fact_Accel/Factorial/CU/Control_reg[3]' (LD) to 'soc/Fact_Accel/Factorial/CU/Control_reg[4]'
+INFO: [Synth 8-3886] merging instance 'soc/Fact_Accel/Factorial/CU/Control_reg[2]' (LD) to 'soc/Fact_Accel/Factorial/CU/Control_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 863.336 ; gain = 367.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                      | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------------------+-----------+----------------------+-----------------+
+|fpga_top    | soc/processor/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|fpga_top    | soc/data_memory/ram_reg         | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+---------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 881.719 ; gain = 385.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 902.340 ; gain = 406.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                      | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------------------+-----------+----------------------+-----------------+
+|fpga_top    | soc/processor/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|fpga_top    | soc/data_memory/ram_reg         | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+---------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 951.234 ; gain = 454.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    59|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |     6|
+|5     |LUT2     |    96|
+|6     |LUT3     |   119|
+|7     |LUT4     |   124|
+|8     |LUT5     |   186|
+|9     |LUT6     |   515|
+|10    |MUXF7    |    18|
+|11    |MUXF8    |     4|
+|12    |RAM32M   |    12|
+|13    |RAM64X1S |    32|
+|14    |FDCE     |    43|
+|15    |FDPE     |     1|
+|16    |FDRE     |   174|
+|17    |LD       |     6|
+|18    |IBUF     |     7|
+|19    |OBUF     |    17|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------+------+
+|      |Instance             |Module                 |Cells |
++------+---------------------+-----------------------+------+
+|1     |top                  |                       |  1425|
+|2     |  clk_gen            |clk_gen                |   114|
+|3     |  disp_driver        |disp_driver            |     8|
+|4     |    led_mux          |led_mux                |     8|
+|5     |  soc                |soc                    |  1277|
+|6     |    Fact_Accel       |FactorialAccelerator   |   390|
+|7     |      DoneLatch      |SRLatch                |     3|
+|8     |      ErrLatch       |SRLatch_2              |     3|
+|9     |      Factorial      |Factorial              |   316|
+|10    |        CU           |Factorial_CU           |    13|
+|11    |        DP           |Factorial_DP           |   303|
+|12    |          count      |cnt                    |    14|
+|13    |          regiseter  |D_Register             |   289|
+|14    |      GoGate         |Gate__parameterized0   |     1|
+|15    |      GoPulseGate    |Gate__parameterized0_3 |     1|
+|16    |      NGate          |Gate__parameterized1   |     8|
+|17    |      NfGate         |Gate_4                 |    58|
+|18    |    data_memory      |dmem                   |    33|
+|19    |    gpio             |GPIO                   |   124|
+|20    |      GPIO1          |Gate                   |    32|
+|21    |      GPIO2          |Gate_1                 |    92|
+|22    |    processor        |SingleCycleMips        |   730|
+|23    |      mips           |mips                   |   730|
+|24    |        dp           |datapath               |   730|
+|25    |          alu        |alu                    |    85|
+|26    |          pc_plus_4  |adder                  |     1|
+|27    |          pc_plus_br |adder_0                |     2|
+|28    |          pc_reg     |dreg                   |   629|
+|29    |          rf         |regfile                |    13|
++------+---------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 956.531 ; gain = 335.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 956.531 ; gain = 460.203
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 956.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50 instances were transformed.
+  LD => LDCE: 6 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+115 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 956.531 ; gain = 666.555
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 956.531 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/synth_1/fpga_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_top_utilization_synth.rpt -pb fpga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 12:33:30 2020...

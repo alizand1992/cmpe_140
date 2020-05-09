@@ -1,0 +1,16 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Documents/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e490891391e04ac4a8da26862544ebb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_gpio_behav xil_defaultlib.tb_gpio xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.Gate
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.GPIO
+Compiling module xil_defaultlib.tb_gpio
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_gpio_behav

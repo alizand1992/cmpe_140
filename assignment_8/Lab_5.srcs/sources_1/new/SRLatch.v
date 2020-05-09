@@ -6,6 +6,12 @@ module SRLatch(
     );
     
     reg qnot;
+    
+    initial begin
+        q = 1'b0;
+        qnot = 1'b0;
+    end
+    
     always@(posedge clk)begin
         q = ~(r | qnot);
         qnot = ~(s | q);

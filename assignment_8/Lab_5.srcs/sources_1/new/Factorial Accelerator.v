@@ -12,7 +12,6 @@ module FactorialAccelerator(
     wire [1:0]  RdSel;
     wire        Go;
     wire        GoPulse;
-    wire        GoPulseClk;
     wire        GoPulseCmb;
     wire [3:0]  n;
     wire done;
@@ -30,13 +29,13 @@ module FactorialAccelerator(
         .RdSel  (RdSel)
     );
     
-    assign GoPulse = wd[0] & We2;
+    assign GoPulseCmb = wd[0] & We2;
     
     Gate #(1) GoPulseGate(
         .clk    (clk),
-        .en     (GoPulse),
-        .i      (GoPulse),
-        .o      (GoPulseClk)
+        .en     (1'b1),
+        .i      (GoPulseCmb),
+        .o      (GoPulse)
     );
     
     Gate #(1) GoGate(
@@ -55,7 +54,7 @@ module FactorialAccelerator(
     Factorial Factorial(
         .clk    (clk),
         .rst    (rst),
-        .go     (GoPulseClk),
+        .go     (GoPulse),
         .n      (n),
         .done   (done),
         .err    (err),

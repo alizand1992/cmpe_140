@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/CMPE 140/lab5_processor_design_1/Lab_5.runs/synth_1'
+HD_PWD='D:/Documents/CMPE 140/cmpe_140-assignment-8/assignment_8/Lab_5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mips_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_fpga.tcl
+EAStep vivado -log fpga_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
