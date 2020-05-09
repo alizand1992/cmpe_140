@@ -46,7 +46,7 @@ module Hazard_CU(
     assign branchStall = branchStall_1 | branchStall_2;
     assign stallF = !(!(lwstall_reg)) | branchStall | lwstall;
     assign stallD = stallF;  
-    assign flushE = lwstall_reg[1] | branchStall;
+    assign flushE = lwstall_reg[1] | branchStall | lwstall;
     
     //Forward AE
     assign forwardAE = (we_regM & s_rsE & (rf_waM == rsE)==1) ? 2'b10 : (we_regW & s_rsE & (rf_waW == rsE)==1) ? 2'b01 : 2'b00;
